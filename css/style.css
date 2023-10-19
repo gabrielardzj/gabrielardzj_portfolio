@@ -420,4 +420,121 @@ ul li a {
     justify-content: center;
     align-items: center;
     font-size: 24px;
-  }
+}
+
+
+/*!--------------------------------------------------Skill---------------------------------------------------------------*/
+
+.texto-principal-skill{
+    font-size: 85px;
+    font-weight: bold;
+    margin: 50px 50px 50px 280px;
+    font-family: 'Urbanist', sans-serif;
+    background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+    background-clip : text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.grid-skills{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 250px));
+    grid-template-rows: repeat(2, minmax(150px, 250px));
+    gap: 80px;
+    margin: 50px;
+    justify-content: center;
+}
+
+.item-skill{
+    background-color: #2c283d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    position: relative; 
+}
+
+.icon-1::before {
+    content: '\f121'; 
+    font-family: 'Font Awesome 6 Free'; 
+    position: absolute;
+    top: 50px; 
+    left: 30px; 
+    font-size: 45px; 
+    background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+    background-clip : text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.icon-2::before {
+    content: '\f5fc'; 
+    font-family: 'Font Awesome 6 Free'; 
+    position: absolute;
+    top: 50px; 
+    left: 30px; 
+    font-size: 45px; 
+    background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+    background-clip : text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.icon-3::before {
+    content: '\f1c9'; 
+    font-family: 'Font Awesome 6 Free'; 
+    position: absolute;
+    top: 50px; 
+    left: 30px; 
+    font-size: 45px; 
+    background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+    background-clip : text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+.icon-4::before {
+    content: '\f245'; 
+    font-family: 'Font Awesome 6 Free'; 
+    position: absolute;
+    top: 50px; 
+    left: 30px; 
+    font-size: 45px; 
+    background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+    background-clip : text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.icon-5::before {
+    content: '\f5ad'; 
+    font-family: 'Font Awesome 6 Free'; 
+    position: absolute;
+    top: 50px; 
+    left: 30px; 
+    font-size: 45px; 
+    background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+    background-clip : text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.icon-6::before {
+    content: '\f390'; 
+    font-family: 'Font Awesome 6 Free'; 
+    position: absolute;
+    top: 50px; 
+    left: 30px; 
+    font-size: 45px; 
+    background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+    background-clip : text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
