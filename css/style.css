@@ -9,6 +9,10 @@ header {
   font-family: 'Urbanist', sans-serif;
 }
 
+h1{
+    color: white;
+}
+
 .logo img {
   height: 50px;
 }
@@ -106,6 +110,7 @@ main{
     border-radius: 50%;
 
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: 300px 300px 300px 300px ;
@@ -380,6 +385,7 @@ ul li a {
     grid-template-rows: auto auto auto auto; 
     gap: 10px; 
     align-items: center;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .titulo-services{
@@ -389,6 +395,7 @@ ul li a {
     color:white;
     font-size: 80px;
     margin: 50px;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .texto-services{
@@ -398,6 +405,7 @@ ul li a {
     color: white;
     line-height: 150%;
     margin: 50px;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .grid-item {
