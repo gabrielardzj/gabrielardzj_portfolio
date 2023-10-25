@@ -1,5 +1,4 @@
-/*!------------HEADER-------------*/
-
+/*!------------HEADER----------------------------------------------------------------------*/
 
 header {
   display: flex;
@@ -17,6 +16,7 @@ h1{
 .logo img {
   height: 50px;
 }
+
 
 nav ul {
     list-style: none;
@@ -45,7 +45,7 @@ nav a:hover {
   font-size: 22px;
 }
 
-  /* Estilo para pantallas pequeñas */
+/*!------------HEADER RESPOSIVE-------------------------------------------------------------*/
   @media screen and (max-width: 768px) {
     nav {
       display: none;
@@ -77,8 +77,8 @@ nav a:hover {
     .hamburger-inner::after {
       width: 30px;
       height: 4px;
-      background-color: #fff;
-      border-radius: 4px;
+      background-color: #701FE1;
+      border-radius: 50px;
       position: absolute;
       transition-property: transform;
       transition-duration: 0.15s;
@@ -110,11 +110,12 @@ nav a:hover {
     nav.active {
       display: block;
       position: absolute;
-      top: 100%;
-      left: 0;
+      top: 10%;
+      right: 0;
       width: 100%;
-      background-color: #333;
+      background-image: linear-gradient(to bottom, #701FE1, #5E35DF); 
       padding: 20px;
+    
     }
   
     nav.active ul {
@@ -123,14 +124,13 @@ nav a:hover {
     }
   
     nav.active li {
-      margin-right: 0;
+      margin-right: 50px;
       margin-bottom: 10px;
     }
   }
 
 
-
-/*!------------GENÉRICOS-------------*/
+/*!------------GENÉRICOS--------------------------------------------------------------------*/
 
 
 body{
@@ -174,29 +174,7 @@ h2 {
     cursor: pointer; 
     font-weight: bold;
 }
-
-/*!---------------------------------MAIN INFO PERSONAL------------------------------------------*/
-
-main{
-    max-width: 1200px;
-    margin: 0 auto;} 
-
-.hero{
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-}
-
-.image-personal{
-    padding: 30% 0 0 0;
-
-}
-
-.hero-image{
-    width: 300px; 
-    height: 300px; 
-    border-radius: 50%;
-
-}
+/*!-----------------------INDEX HABILIDADES PERSONALES--------------------------------------*/
 
 .grid-container {
     display: grid;
@@ -240,6 +218,79 @@ main{
     text-align: center;
     font-family: 'Urbanist', sans-serif;
     font-weight: lighter;
+}
+
+@media (max-width: 1250px) {
+    .grid-container {
+        grid-template-columns: 500px 500px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .grid-item {
+        padding-top: 500px;
+    }
+
+    .grid-item i {
+        font-size: 35px;
+    }
+
+    .grid-item p {
+        font-size: 30px;
+    }
+
+    .grid-item p:nth-of-type(2) {
+        font-size: 10px;
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 300px 300px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .grid-item {
+        padding-top: 500px;
+    }
+
+    .grid-item i {
+        font-size: 35px;
+    }
+
+    .grid-item p {
+        font-size: 30px;
+    }
+
+    .grid-item p:nth-of-type(2) {
+        font-size: 10px;
+        display: none;
+    }
+}
+
+/*!-----------------------INDEX MAIN INFO PERSONAL------------------------------------------*/
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;} 
+
+.hero{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.image-personal{
+    padding: 30% 0 0 0;
+
+}
+
+.hero-image{
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%;
+
 }
 
 .info{
@@ -289,8 +340,7 @@ main{
         grid-column-end: span 1;
     }
 }
-/*!-----------------------------------------------------------------------------------*/
-
+/*!-----------------------INDEX SKILLS------------------------------------------------------*/
 
 .skills {
     text-align: center; 
@@ -322,8 +372,25 @@ main{
     font-family: 'Urbanist', sans-serif;
 }
 
+@media (max-width: 768px) {
+    .skills h2 {
+        font-size: 30px; /* Reducir el tamaño del encabezado */
+    }
 
-/*!-----------------------------------------------------------------------------------*/
+    .image-text-skills {
+        margin: 15px; /* Reducir el margen */
+    }
+
+    .image-text-skills img {
+        width: 120px; /* Reducir el tamaño de la imagen */
+    }
+
+    .image-text-skills p {
+        font-size: 14px; /* Reducir el tamaño de la fuente del párrafo */
+    }
+}
+
+/*!-----------------------INDEX SERVICES----------------------------------------------------*/
 
 .services-grid{
     display: grid;
@@ -376,7 +443,7 @@ main{
 }
 
 
-/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------INDEX TRABAJAR JUNTOS----------------------------------------------*/
 
 .trabajar-juntos h3 {
     color:white;
@@ -389,8 +456,19 @@ main{
     text-align: left;
 }
 
+@media (max-width: 768px) {
+    .trabajar-juntos h3 {
+        font-size: 40px; /* Reducir el tamaño del título */
+    }
 
-/*!------------FOOTER-------------*/
+    .trabajar-juntos p {
+        font-size: 18px; /* Reducir el tamaño del párrafo */
+        text-align: center; /* Cambiar la alineación del párrafo a centrado */
+    }
+}
+
+
+/*!------------FOOTER-----------------------------------------------------------------------*/
 
 .redes-sociales ul {
     list-style-type: none; 
@@ -416,92 +494,20 @@ ul li a {
     color: #fff;
 }
 
-
-/*!------------CONTACT-------------*/
-
-.contenido-contacto {
-    margin-left: 50px;
-    margin-bottom: 80px;
-    color: white;
-    font-size: 22px; 
-    text-decoration: none;
+@media (max-width: 768px) {
+    .redes-sociales ul li span {
+        display: none; /* Ocultar solo el texto */
+    }
 }
 
-.formulario {
-    font-size: 24px; 
-    vertical-align: middle; 
-    color: #fff; 
-    
-}
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
 
-.formulario {
-    max-width: 400px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 0 70px 0;
-}
-
-.formulario form div {
-    margin-bottom: 15px;
-}
-
-
-/*!--------------------------------------------------SERVICES---------------------------------------------------------------*/
-
-.main-services{
-    display: grid;
-    grid-template-columns: 1fr; 
-    grid-template-rows: auto auto auto auto; 
-    gap: 10px; 
-    align-items: center;
-    font-family: 'Urbanist', sans-serif;
-}
-
-.titulo-services{
-    grid-row: 1;
-    text-align: center;
-    font-weight: bold;
-    color:white;
-    font-size: 80px;
-    margin: 50px;
-    font-family: 'Urbanist', sans-serif;
-}
-
-.texto-services{
-    text-align: center;
-    padding: 10px;
-    font-size: 22px; 
-    color: white;
-    line-height: 150%;
-    margin: 50px;
-    font-family: 'Urbanist', sans-serif;
-}
-
-.grid-item {
-    padding: 20px;
-    text-align: center;
-}
-
-.grid-services{
-    display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 450px));
-    grid-template-rows: repeat(2, minmax(80px, 200px));
-    gap: 10px;
-    margin: 50px;
-    justify-content: center;
-}
-
-.item {
-    border: 1px solid #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-}
-
-
-/*!--------------------------------------------------Skill---------------------------------------------------------------*/
+/*!-----------------------MAIN PAGE SKILLS--------------------------------------------------*/
 
 .texto-principal-skill{
     font-size: 85px;
@@ -616,6 +622,88 @@ ul li a {
     background-clip : text; 
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
+}
+
+/*!-----------------------MAIN PAGE SERVICES-------------------------------------------------*/
+
+.main-services{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto auto auto; 
+    gap: 10px; 
+    align-items: center;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.titulo-services{
+    grid-row: 1;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+    font-size: 80px;
+    margin: 50px;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.texto-services{
+    text-align: center;
+    padding: 10px;
+    font-size: 22px; 
+    color: white;
+    line-height: 150%;
+    margin: 50px;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-services{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 450px));
+    grid-template-rows: repeat(2, minmax(80px, 200px));
+    gap: 10px;
+    margin: 50px;
+    justify-content: center;
+}
+
+.item {
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+/*!-----------------------MAIN CONTACT-------------------------------------------------------*/
+
+.contenido-contacto {
+    margin-left: 50px;
+    margin-bottom: 80px;
+    color: white;
+    font-size: 22px; 
+    text-decoration: none;
+}
+
+.formulario {
+    font-size: 24px; 
+    vertical-align: middle; 
+    color: #fff; 
+    
+}
+
+.formulario {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 70px 0;
+}
+
+.formulario form div {
+    margin-bottom: 15px;
 }
 
 
