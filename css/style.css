@@ -46,7 +46,7 @@ nav a:hover {
 }
 
 /*!------------HEADER RESPOSIVE-------------------------------------------------------------*/
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     nav {
       display: none;
     }
@@ -57,10 +57,11 @@ nav a:hover {
       border: none;
       cursor: pointer;
       padding: 0;
+      margin: 30px;
     }
   
     .hamburger-box {
-      width: 30px;
+      width: 10px;
       height: 24px;
       display: inline-block;
       position: relative;
@@ -111,7 +112,7 @@ nav a:hover {
       display: block;
       position: absolute;
       top: 10%;
-      right: 0;
+      margin-right: 20px;
       width: 100%;
       background-image: linear-gradient(to bottom, #701FE1, #5E35DF); 
       padding: 20px;
@@ -136,6 +137,21 @@ nav a:hover {
 body{
     background-color: #181620;
 }
+@media screen and (max-width: 1024px) {
+    body {
+        background-color: #181620; 
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background-color: #181620; 
+        width: 100%; 
+        height: auto; 
+    }
+}
 
 h2 {
     color: white;
@@ -151,6 +167,21 @@ h2 {
     font-weight: bold;
     margin: 50px;
     font-family: 'Urbanist', sans-serif;
+}
+@media screen and (max-width: 1024px) {
+    .texto-principal {
+        font-size: 70px;
+        margin: 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .texto-principal {
+        font-size: 50px;
+        margin: 20px;
+        width: 100%;      
+    }
 }
 
 .parrafos-genericos {
@@ -173,6 +204,22 @@ h2 {
     border-radius: 15px; 
     cursor: pointer; 
     font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+    .button-generico {
+        font-size: 14px; 
+        padding: 10px 20px; 
+        margin: 10px auto; 
+        border-radius: 10px; 
+    }
+}
+@media screen and (max-width: 767px) {
+    .button-generico {
+        font-size: 13px; 
+        padding: 10px 20px; 
+        margin: 10px auto; 
+        border-radius: 10px; 
+    }
 }
 /*!-----------------------INDEX HABILIDADES PERSONALES--------------------------------------*/
 
@@ -220,7 +267,7 @@ h2 {
     font-weight: lighter;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1024px) {
     .grid-container {
         grid-template-columns: 500px 500px;
         margin-top: 100px;
@@ -228,15 +275,15 @@ h2 {
     }
 
     .grid-item {
-        padding-top: 500px;
+        padding-top: 50px;
     }
 
     .grid-item i {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .grid-item p {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .grid-item p:nth-of-type(2) {
@@ -245,23 +292,23 @@ h2 {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .grid-container {
-        grid-template-columns: 300px 300px;
+        grid-template-columns: 200px;
         margin-top: 100px;
         margin-bottom: 50px;
     }
 
     .grid-item {
-        padding-top: 500px;
+        padding-top: 40px;
     }
 
     .grid-item i {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .grid-item p {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .grid-item p:nth-of-type(2) {
@@ -301,9 +348,9 @@ main{
     margin-left: 10px; 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     main {
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .hero {
@@ -334,6 +381,44 @@ main{
     .info {
         text-align: center; 
         
+        grid-row-start: row3-start;
+        grid-row-end: row3-end;
+        grid-column-start: 1;
+        grid-column-end: span 1;
+    }
+}
+@media screen and (max-width: 767px) {
+    main {
+        max-width: 100%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: [row1-start] 7% [row1-end] 50px [last-line] auto;
+    }
+
+
+    .about{
+        grid-row-start: row1-start;
+        grid-row-end: row1-end;
+        grid-column-start: 1;
+        grid-column-end: span 1;
+    }
+
+    .image-personal{
+        padding: 12% 0 0 11%;
+        grid-column-start: 1;
+        grid-column-end: span 1;
+    }
+
+    .hero-image {
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .info {
+        text-align: center; 
         grid-row-start: row3-start;
         grid-row-end: row3-end;
         grid-column-start: 1;
@@ -371,22 +456,39 @@ main{
     margin-top: 5px;
     font-family: 'Urbanist', sans-serif;
 }
-
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .skills h2 {
-        font-size: 30px; /* Reducir el tamaño del encabezado */
+        font-size: 35px; 
     }
 
     .image-text-skills {
-        margin: 15px; /* Reducir el margen */
+        margin: 15px; 
     }
 
     .image-text-skills img {
-        width: 120px; /* Reducir el tamaño de la imagen */
+        width: 120px; 
     }
 
     .image-text-skills p {
-        font-size: 14px; /* Reducir el tamaño de la fuente del párrafo */
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 767px) {
+    .skills h2 {
+        font-size: 30px; 
+    }
+
+    .image-text-skills {
+        margin: 15px; 
+    }
+
+    .image-text-skills img {
+        width: 120px; 
+    }
+
+    .image-text-skills p {
+        font-size: 14px; 
     }
 }
 
@@ -437,11 +539,62 @@ main{
             "three three"
             "four five"
             "six seven";
-            margin-left: 125px;
+            margin-right: 125px;
+    }
+
+    .services {
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .services h2 {
+        font-size: 35px; 
+    }
+
+    .services i {
+        font-size: 50px; 
+        margin-bottom: 15px;
+    }
+
+    .services p {
+        font-size: 20px; 
     }
     
 }
 
+@media screen and (max-width: 767px) {
+    .services-grid {
+    grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+            "seven";
+        margin-right: 120px;
+    }
+    .services {
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .services h2 {
+        font-size: 30px;
+    }
+
+    .services i {
+        font-size: 45px;
+        margin-bottom: 0;
+    }
+
+    .services p {
+        font-size: 20px;
+    }
+}
 
 /*!-----------------------INDEX TRABAJAR JUNTOS----------------------------------------------*/
 
@@ -458,12 +611,12 @@ main{
 
 @media (max-width: 768px) {
     .trabajar-juntos h3 {
-        font-size: 40px; /* Reducir el tamaño del título */
+        font-size: 30px; 
     }
 
     .trabajar-juntos p {
-        font-size: 18px; /* Reducir el tamaño del párrafo */
-        text-align: center; /* Cambiar la alineación del párrafo a centrado */
+        font-size: 18px; 
+        text-align: center; 
     }
 }
 
@@ -494,11 +647,20 @@ ul li a {
     color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .redes-sociales ul li span {
-        display: none; /* Ocultar solo el texto */
+        display: none; 
+    }
+    .redes-sociales ul {
+        grid-template-columns: repeat(2, 1fr); 
+        margin-left: 0; 
+    }
+
+    .redes-sociales ul li {
+        margin: 20px; 
     }
 }
+
 
 /*!-----------------------------------------------------------------------------------------*/
 /*!-----------------------------------------------------------------------------------------*/
@@ -655,9 +817,48 @@ ul li a {
     font-family: 'Urbanist', sans-serif;
 }
 
-.grid-item {
-    padding: 20px;
+.grid-container-services{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px ;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.grid-item-services{
+    position: relative;
     text-align: center;
+    padding-top: 50px;
+}
+  
+.grid-item-services i {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+    background-clip : text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.grid-item-services p {
+    margin-top: 20px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+
+.grid-item-services p:nth-of-type(2) {
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: lighter;
 }
 
 .grid-services{
