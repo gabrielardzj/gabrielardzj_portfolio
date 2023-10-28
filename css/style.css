@@ -616,7 +616,7 @@ main{
 
     .trabajar-juntos p {
         font-size: 18px; 
-        text-align: center; 
+        text-align: center;
     }
 }
 
@@ -785,7 +785,86 @@ ul li a {
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 1024px) {
+    .texto-principal-skill {
+        font-size: 45px; 
+    }
 
+    .texto-principal-skill-2 {
+        font-size: 30px; 
+        margin: 30px; 
+    }
+
+    .grid-skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+        margin: 30px; 
+        grid-template-areas:
+            "one two"
+            "three four"
+            "five six";
+        grid-template-rows: 250px 250px 250px;
+    }
+
+    .item-skill {
+        font-size: 20px; 
+        padding-top: 20px;
+    }
+
+    .icon-1::before,
+    .icon-2::before,
+    .icon-3::before,
+    .icon-4::before,
+    .icon-5::before,
+    .icon-6::before {
+        top: 30%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .texto-principal-skill {
+        font-size: 45px; 
+    }
+
+    .texto-principal-skill-2 {
+        font-size: 30px; 
+        margin: 30px; 
+    }
+
+    .grid-skills {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px; 
+        margin: 30px; 
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six";
+        grid-template-rows: 250px 250px 250px 250px 250px 250px;
+    }
+
+    .item-skill {
+        font-size: 20px; 
+        padding-top: 20px;
+    }
+
+    .icon-1::before,
+    .icon-2::before,
+    .icon-3::before,
+    .icon-4::before,
+    .icon-5::before,
+    .icon-6::before {
+        top: 30%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+    }
+}
 /*!-----------------------MAIN PAGE SERVICES-------------------------------------------------*/
 
 .main-services{
@@ -822,7 +901,7 @@ ul li a {
     grid-template-columns: 300px 300px 300px 300px ;
     justify-content: center;
     gap: 20px;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 100px;
     color: white;
 }
@@ -876,6 +955,87 @@ ul li a {
     justify-content: center;
     align-items: center;
     font-size: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+    .titulo-services {
+        font-size: 50px; 
+        margin: 30px; 
+    }
+
+    .texto-services {
+        font-size: 18px; 
+        margin: 30px; 
+    }
+
+    .grid-container-services {
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 10px; 
+        margin-top: 50px; 
+        margin-bottom: 50px; 
+    }
+
+    .grid-item-services p:nth-of-type(2) {
+        font-size: 14px; 
+    }
+
+    .grid-services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+        margin: 30px; 
+        grid-template-areas:
+            "one two"
+            "three four"
+            "five six";
+        grid-template-rows: 250px 250px 250px;
+    }
+
+    .item {
+        font-size: 18px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .titulo-services {
+        font-size: 40px; 
+        margin: 30px; 
+    }
+
+    .texto-services {
+        font-size: 18px; 
+        margin: 30px; 
+    }
+
+    .grid-container-services {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 5px; 
+        margin-top: 50px; 
+        margin-bottom: 50px; 
+    }
+
+    .grid-item-services p:nth-of-type(2) {
+        font-size: 14px; 
+    }
+
+    .grid-services {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px; 
+        margin: 30px; 
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six";
+        grid-template-rows: 200px 200px 200px 200px 200px 200px;
+    }
+
+    .item {
+        font-size: 18px; 
+    }
 }
 
 /*!-----------------------MAIN CONTACT-------------------------------------------------------*/
