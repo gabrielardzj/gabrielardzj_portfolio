@@ -1,0 +1,39 @@
+$color-primario:#181620;
+$color-secundario:#fff;
+$color-terciario:linear-gradient(to bottom, #701FE1, #5E35DF);
+$font-stack: 'Urbanist', sans-serif;
+
+
+$size-primario: 85px;
+$size-secundario:65px;
+$size-terciario:45px;
+
+$boton:(
+    fondo: $color-terciario,
+    text-size: 16px,
+    text-peso: bold,
+    text-color: $color-secundario,
+    espaciado-interior: 15px 25px,
+    visualizacion: block,
+    margen: 0 auto,
+    border: none,
+    radio-border: 15px,
+    punterio: pointer,
+
+);
+
+.button{
+    background-color: map-get($boton, fondo);
+    font-size: map-get($boton, text-size);
+    font-weight: map-get($boton, text-peso);
+    color: map-get($boton, text-color);
+    padding: map-get($boton, espaciado-interior);
+    display: map-get($boton, visualizacion);
+    margin: map-get($boton, margen);
+    border: map-get($boton, border);
+    border-radius: map-get($boton, radio-border);
+    cursor: map-get($boton, punterio);
+
+}
+
+

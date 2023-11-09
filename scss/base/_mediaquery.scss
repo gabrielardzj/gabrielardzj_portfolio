@@ -1,0 +1,80 @@
+@media screen and (max-width: 767px) {
+
+    .hamburger {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        margin: 30px;
+        .hamburger-box {
+            width: 10px;
+            height: 24px;
+            display: inline-block;
+            position: relative;
+            .hamburger-inner {
+                display: block;
+                top: 50%;
+                margin-top: -2px;
+            }
+            
+              .hamburger-inner,
+              .hamburger-inner::before,
+              .hamburger-inner::after {
+                width: 30px;
+                height: 4px;
+                background-color: #701FE1;
+                border-radius: 50px;
+                position: absolute;
+                transition-property: transform;
+                transition-duration: 0.15s;
+                transition-timing-function: ease;
+                .hamburger-inner::before {
+                    content: "";
+                    top: -10px;
+                }
+                
+                .hamburger-inner::after {
+                    content: "";
+                    bottom: -10px;
+                }
+
+                .hamburger.activea .hamburger-inner {
+                transform: rotate(45deg);
+                    .hamburger.active .hamburger-inner::before {
+                    transform: translate(6px, -6px) rotate(90deg);
+                    }
+                    .hamburger.active .hamburger-inner::after {
+                        transform: translate(6px, 6px) rotate(90deg);
+                    }
+                }
+                
+            }
+
+        }
+    }
+  
+    nav {
+      display: none;
+        nav.active {
+            display: block;
+            position: absolute;
+            top: 10%;
+            margin-right: 20px;
+            width: 100%;
+            background-image: linear-gradient(to bottom, #701FE1, #5E35DF); 
+            padding: 20px;
+            nav.active ul {
+                flex-direction: column;
+                align-items: center;
+                nav.active li {
+                    margin-right: 50px;
+                    margin-bottom: 10px;
+                }
+            }
+        
+        
+        }
+    }
+}
+
