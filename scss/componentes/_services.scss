@@ -1,0 +1,67 @@
+body{
+    section{
+        .titulo-services{
+            grid-row: 1;
+            text-align: center;
+            font-weight: bold;
+            color:white;
+            font-size: 80px;
+            margin: 50px;
+            font-family: 'Urbanist', sans-serif;
+        }
+        .texto-services{
+            text-align: center;
+            padding: 10px;
+            font-size: 22px; 
+            color: white;
+            line-height: 150%;
+            margin: 50px;
+            font-family: 'Urbanist', sans-serif;
+        }
+        a{
+            .button{
+                background-color: map-get($boton, fondo);
+                font-size: map-get($boton, text-size);
+                font-weight: map-get($boton, text-peso);
+                color: map-get($boton, text-color);
+                padding: map-get($boton, espaciado-interior);
+                display: map-get($boton, visualizacion);
+                margin: map-get($boton, margen);
+                border: map-get($boton, border);
+                border-radius: map-get($boton, radio-border);
+                cursor: map-get($boton, punterio);
+            }
+        }
+    }
+    .grid-container-services{
+        @include grid (4, 300px, 20px, center, 100px, 100px, white);
+
+        .grid-item-services{
+            position: relative;
+            text-align: center;
+            padding-top: 50px;
+
+        i{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 30px;
+            margin-bottom: 10px;
+            background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+            background-clip : text; 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        }
+    }
+    .grid-services {
+        @include grid-s(3, 300px, 450px, 2, 80px, 200px, 10px, 50px, center, 1px solid #ffffff, 24px);
+      
+        .item {
+          @include item(1px solid #ffffff, center, center, 24px);
+        }
+    }
+}

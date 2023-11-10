@@ -1,3 +1,4 @@
+@import '../base/variables_operaciones';
 body{
     background-color: $color-primario;
     main{
@@ -15,7 +16,16 @@ body{
             }
             a{
                 .button{
-        
+                    background-color: map-get($boton, fondo);
+                    font-size: map-get($boton, text-size);
+                    font-weight: map-get($boton, text-peso);
+                    color: map-get($boton, text-color);
+                    padding: map-get($boton, espaciado-interior);
+                    display: map-get($boton, visualizacion);
+                    margin: map-get($boton, margen);
+                    border: map-get($boton, border);
+                    border-radius: map-get($boton, radio-border);
+                    cursor: map-get($boton, punterio);
                 }
             }
         }
@@ -86,7 +96,16 @@ body{
                 }
                 a{
                     .button{
-
+                        background-color: map-get($boton, fondo);
+                        font-size: map-get($boton, text-size);
+                        font-weight: map-get($boton, text-peso);
+                        color: map-get($boton, text-color);
+                        padding: map-get($boton, espaciado-interior);
+                        display: map-get($boton, visualizacion);
+                        margin: map-get($boton, margen);
+                        border: map-get($boton, border);
+                        border-radius: map-get($boton, radio-border);
+                        cursor: map-get($boton, punterio);
                     }
 
                 }
@@ -127,7 +146,16 @@ body{
             }
             a{
                 .button{
-    
+                    background-color: map-get($boton, fondo);
+                    font-size: map-get($boton, text-size);
+                    font-weight: map-get($boton, text-peso);
+                    color: map-get($boton, text-color);
+                    padding: map-get($boton, espaciado-interior);
+                    display: map-get($boton, visualizacion);
+                    margin: map-get($boton, margen);
+                    border: map-get($boton, border);
+                    border-radius: map-get($boton, radio-border);
+                    cursor: map-get($boton, punterio);
                 }
             }
         }
@@ -174,7 +202,16 @@ body{
             
                 a{
                     .button{
-
+                        background-color: map-get($boton, fondo);
+                        font-size: map-get($boton, text-size);
+                        font-weight: map-get($boton, text-peso);
+                        color: map-get($boton, text-color);
+                        padding: map-get($boton, espaciado-interior);
+                        display: map-get($boton, visualizacion);
+                        margin: map-get($boton, margen);
+                        border: map-get($boton, border);
+                        border-radius: map-get($boton, radio-border);
+                        cursor: map-get($boton, punterio);
                     }
                 }
         
@@ -194,7 +231,16 @@ body{
                 }
                 a{
                     .button{
-
+                        background-color: map-get($boton, fondo);
+                        font-size: map-get($boton, text-size);
+                        font-weight: map-get($boton, text-peso);
+                        color: map-get($boton, text-color);
+                        padding: map-get($boton, espaciado-interior);
+                        display: map-get($boton, visualizacion);
+                        margin: map-get($boton, margen);
+                        border: map-get($boton, border);
+                        border-radius: map-get($boton, radio-border);
+                        cursor: map-get($boton, punterio);
                     }
                 }
 

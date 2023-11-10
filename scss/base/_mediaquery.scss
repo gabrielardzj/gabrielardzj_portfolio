@@ -1,3 +1,5 @@
+/*!-------------HEADER----------------------------------------------------------------------*/
+
 @media screen and (max-width: 767px) {
 
     .hamburger {
@@ -78,3 +80,311 @@
     }
 }
 
+/*!------------GENÉRICOS--------------------------------------------------------------------*/
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-color: #181620; 
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background-color: #181620; 
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .texto-principal {
+        font-size: 70px;
+        margin: 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .texto-principal {
+        font-size: 50px;
+        margin: 20px;
+        width: 100%;      
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .button-generico {
+        font-size: 14px; 
+        padding: 10px 20px; 
+        margin: 10px auto; 
+        border-radius: 10px; 
+    }
+}
+@media screen and (max-width: 767px) {
+    .button-generico {
+        font-size: 13px; 
+        padding: 10px 20px; 
+        margin: 10px auto; 
+        border-radius: 10px; 
+    }
+}
+
+/*!---------INDEX HABILIDADES PERSONALES--------------------------------------*/
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 500px 500px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .grid-item {
+        padding-top: 50px;
+    }
+
+    .grid-item i {
+        font-size: 30px;
+    }
+
+    .grid-item p {
+        font-size: 25px;
+    }
+
+    .grid-item p:nth-of-type(2) {
+        font-size: 10px;
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 200px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .grid-item {
+        padding-top: 40px;
+    }
+
+    .grid-item i {
+        font-size: 30px;
+    }
+
+    .grid-item p {
+        font-size: 25px;
+    }
+
+    .grid-item p:nth-of-type(2) {
+        font-size: 10px;
+        display: none;
+    }
+}
+
+/*!-----------------------INDEX MAIN INFO PERSONAL------------------------------------------*/
+@media screen and (max-width: 1024px) {
+    main {
+        max-width: 100%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: [row1-start] 20% [row1-end] 100px [last-line] auto;
+    }
+
+
+    .about{
+        grid-row-start: row1-start;
+        grid-row-end: row1-end;
+        grid-column-start: 1;
+        grid-column-end: span 1;
+    }
+
+    .image-personal{
+        padding: 12% 0 0 30%;
+        grid-column-start: 1;
+        grid-column-end: span 1;
+    }
+
+    .hero-image {
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .info {
+        text-align: center; 
+        
+        grid-row-start: row3-start;
+        grid-row-end: row3-end;
+        grid-column-start: 1;
+        grid-column-end: span 1;
+    }
+}
+@media screen and (max-width: 767px) {
+    main {
+        max-width: 100%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: [row1-start] 7% [row1-end] 50px [last-line] auto;
+    }
+
+
+    .about{
+        grid-row-start: row1-start;
+        grid-row-end: row1-end;
+        grid-column-start: 1;
+        grid-column-end: span 1;
+    }
+
+    .image-personal{
+        padding: 12% 0 0 11%;
+        grid-column-start: 1;
+        grid-column-end: span 1;
+    }
+
+    .hero-image {
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .info {
+        text-align: center; 
+        grid-row-start: row3-start;
+        grid-row-end: row3-end;
+        grid-column-start: 1;
+        grid-column-end: span 1;
+    }
+}
+/*!------------INDEX SKILLS------------------------------------------------------*/
+@media (max-width: 1024px) {
+    .skills h2 {
+        font-size: 35px; 
+    }
+
+    .image-text-skills {
+        margin: 15px; 
+    }
+
+    .image-text-skills img {
+        width: 120px; 
+    }
+
+    .image-text-skills p {
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 767px) {
+    .skills h2 {
+        font-size: 30px; 
+    }
+
+    .image-text-skills {
+        margin: 15px; 
+    }
+
+    .image-text-skills img {
+        width: 120px; 
+    }
+
+    .image-text-skills p {
+        font-size: 14px; 
+    }
+}
+
+/*!----------INDEX SERVICES----------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(100px, 250px)); 
+        grid-template-areas:
+            "one two"
+            "three three"
+            "four five"
+            "six seven";
+            margin-right: 125px;
+    }
+
+    .services {
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .services h2 {
+        font-size: 35px; 
+    }
+
+    .services i {
+        font-size: 50px; 
+        margin-bottom: 15px;
+    }
+
+    .services p {
+        font-size: 20px; 
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .services-grid {
+    grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+            "seven";
+        margin-right: 120px;
+    }
+    .services {
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .services h2 {
+        font-size: 30px;
+    }
+
+    .services i {
+        font-size: 45px;
+        margin-bottom: 0;
+    }
+
+    .services p {
+        font-size: 20px;
+    }
+}
+
+/*!-----------------------INDEX TRABAJAR JUNTOS----------------------------------------------*/
+@media (max-width: 768px) {
+    .trabajar-juntos h3 {
+        font-size: 30px; 
+    }
+
+    .trabajar-juntos p {
+        font-size: 18px; 
+        text-align: center;
+    }
+}
+/*!------------FOOTER-----------------------------------------------------------------------*/
+@media (max-width: 767px) {
+    .redes-sociales ul li span {
+        display: none; 
+    }
+    .redes-sociales ul {
+        grid-template-columns: repeat(2, 1fr); 
+        margin-left: 0; 
+    }
+
+    .redes-sociales ul li {
+        margin: 20px; 
+    }
+}

@@ -1,6 +1,7 @@
 $color-primario:#181620;
 $color-secundario:#fff;
 $color-terciario:linear-gradient(to bottom, #701FE1, #5E35DF);
+$primary-bg-start: #701FE1;
 $font-stack: 'Urbanist', sans-serif;
 
 
@@ -9,17 +10,16 @@ $size-secundario:65px;
 $size-terciario:45px;
 
 $boton:(
-    fondo: $color-terciario,
+    fondo: linear-gradient(to bottom, #701FE1, #5E35DF),
     text-size: 16px,
     text-peso: bold,
-    text-color: $color-secundario,
+    text-color: #fff,
     espaciado-interior: 15px 25px,
     visualizacion: block,
     margen: 0 auto,
     border: none,
     radio-border: 15px,
     punterio: pointer,
-
 );
 
 .button{
@@ -33,7 +33,80 @@ $boton:(
     border: map-get($boton, border);
     border-radius: map-get($boton, radio-border);
     cursor: map-get($boton, punterio);
-
 }
 
+@mixin grid($columns, $column-width, $gap, $justify-content, $margin-top, $margin-bottom, $color) {
+    display: grid;
+    grid-template-columns: repeat($columns, $column-width);
+    justify-content: $justify-content;
+    gap: $gap;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+    color: $color;
+}
 
+.grid-container-services{
+    @include grid (4, 300px, 20px, center, 100px, 100px, white);
+}
+
+@mixin grid-s($columns, $min-column-width, $max-column-width, $rows, $min-row-height, $max-row-height, $gap, $margin, $justify-content, $item-border, $item-font-size) {
+    display: grid;
+    grid-template-columns: repeat($columns, minmax($min-column-width, $max-column-width));
+    grid-template-rows: repeat($rows, minmax($min-row-height, $max-row-height));
+    gap: $gap;
+    margin: $margin;
+    justify-content: $justify-content;
+}
+
+@mixin item($border, $justify-content, $align-items, $font-size) {
+    display: flex;
+    border: $border;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    font-size: $font-size;
+}
+
+.grid-services {
+    @include grid-s(3, 300px, 450px, 2, 80px, 200px, 10px, 50px, center, 1px solid #ffffff, 24px);
+}
+
+.item {
+    @include item(1px solid #ffffff, center, center, 24px);
+}
+
+@mixin awesome-icon($content, $font-family, $position, $top, $left, $font-size, $background-image, $background-clip, $text-fill-color) {
+    content: $content;
+    font-family: $font-family;
+    position: $position;
+    top: $top;
+    left: $left;
+    font-size: $font-size;
+    background-image: $background-image;
+    background-clip: $background-clip;
+    -webkit-background-clip: $background-clip;
+    -webkit-text-fill-color: $text-fill-color;
+}
+
+.icon-1::before {
+    @include awesome-icon("\f121", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+}
+
+.icon-2::before{
+    @include awesome-icon("\f5fc", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+}
+
+.icon-3::before{
+    @include awesome-icon("\f1c9", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+}
+
+.icon-4::before{
+    @include awesome-icon("\f245", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+}
+
+.icon-5::before{
+    @include awesome-icon("\f5ad", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+}
+
+.icon-6::before{
+    @include awesome-icon("\f390", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+}

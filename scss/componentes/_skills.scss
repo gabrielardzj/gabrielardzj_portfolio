@@ -1,0 +1,66 @@
+body{
+    .texto-principal-skill{
+        font-size: 85px;
+        font-weight: bold;
+        font-family: 'Urbanist', sans-serif;
+        color: white;
+        text-align: center;
+        margin-top: 50px;
+
+        p{
+
+        }
+    }
+    .texto-principal-skill-2{
+        font-size: 65px;
+        font-weight: bold;
+        margin: 50px 50px 50px 280px;
+        font-family: 'Urbanist', sans-serif;
+        color: white;
+
+    }
+    .grid-skills{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(150px, 250px));
+        grid-template-rows: repeat(2, minmax(150px, 250px));
+        gap: 80px;
+        margin: 50px;
+        justify-content: center;
+        .item-skill{
+            background-color: #2c283d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+            font-family: 'Urbanist', sans-serif;
+            font-weight: bold;
+            position: relative; 
+            
+            .icon-1::before {
+                @include awesome-icon("\f121", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+            }
+            
+            .icon-2::before{
+                @include awesome-icon("\f5fc", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+            }
+            
+            .icon-3::before{
+                @include awesome-icon("\f1c9", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+            }
+            
+            .icon-4::before{
+                @include awesome-icon("\f245", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+            }
+            
+            .icon-5::before{
+                @include awesome-icon("\f5ad", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+            }
+            
+            .icon-6::before{
+                @include awesome-icon("\f390", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+            }
+
+        }
+    }
+}
