@@ -21,17 +21,17 @@
 
         }
         a{
-            .button{
-                background-color: map-get($boton, fondo);
-                font-size: map-get($boton, text-size);
-                font-weight: map-get($boton, text-peso);
-                color: map-get($boton, text-color);
-                padding: map-get($boton, espaciado-interior);
-                display: map-get($boton, visualizacion);
-                margin: map-get($boton, margen);
-                border: map-get($boton, border);
-                border-radius: map-get($boton, radio-border);
-                cursor: map-get($boton, punterio);
+            .button {
+                background-color: map-get($button, background-color);
+                font-size: map-get($button, font-size);
+                font-weight: map-get($button, font-weight);
+                color: map-get($button, color);
+                padding: map-get($button, padding);
+                display: map-get($button, display);
+                margin: map-get($button, margin);
+                border: map-get($button, border);
+                border-radius: map-get($button, border-radius);
+                cursor: map-get($button, cursor);
             }
 
         }

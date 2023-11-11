@@ -9,31 +9,34 @@ $size-primario: 85px;
 $size-secundario:65px;
 $size-terciario:45px;
 
-$boton:(
-    fondo: linear-gradient(to bottom, #701FE1, #5E35DF),
-    text-size: 16px,
-    text-peso: bold,
-    text-color: #fff,
-    espaciado-interior: 15px 25px,
-    visualizacion: block,
-    margen: 0 auto,
+$button: (
+    background-color: linear-gradient(to bottom, #701FE1, #5E35DF),
+    font-size: 16px,
+    font-weight: bold,
+    color: white,
+    padding: 15px 32px,
+    display: block,
+    margin: 0 auto,
     border: none,
-    radio-border: 15px,
-    punterio: pointer,
+    border-radius: 15px,
+    cursor: pointer
 );
 
-.button{
-    background-color: map-get($boton, fondo);
-    font-size: map-get($boton, text-size);
-    font-weight: map-get($boton, text-peso);
-    color: map-get($boton, text-color);
-    padding: map-get($boton, espaciado-interior);
-    display: map-get($boton, visualizacion);
-    margin: map-get($boton, margen);
-    border: map-get($boton, border);
-    border-radius: map-get($boton, radio-border);
-    cursor: map-get($boton, punterio);
+.button {
+    background-color: map-get($button, background-color);
+    font-size: map-get($button, font-size);
+    font-weight: map-get($button, font-weight);
+    color: map-get($button, color);
+    padding: map-get($button, padding);
+    display: map-get($button, display);
+    margin: map-get($button, margin);
+    border: map-get($button, border);
+    border-radius: map-get($button, border-radius);
+    cursor: map-get($button, cursor);
 }
+
+
+
 
 @mixin grid($columns, $column-width, $gap, $justify-content, $margin-top, $margin-bottom, $color) {
     display: grid;
