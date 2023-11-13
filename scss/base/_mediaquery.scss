@@ -277,6 +277,9 @@
                 }
             }
         }
+        a{
+            display: none; 
+        }
     }
 }
 
@@ -338,15 +341,8 @@
         margin-top: 20px;
     }
     .icon-1::before {
-        content: "";
-        font-family: "Font Awesome 6 Free";
-        font-size: 45px;
-        background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 65px;
-    } 
+        @include awesome-icon-1("\f121", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
+    }    
     .icon-2{
         display: flex;
         flex-direction: column;
@@ -354,15 +350,8 @@
         text-align: center;
         margin-top: 20px;
     }
-    .icon-2::before {
-        content: "";
-        font-family: "Font Awesome 6 Free";
-        font-size: 45px;
-        background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 65px;
+    .icon-2::before{
+        @include awesome-icon-1("\f5fc", "Font Awesome 6 Free",  45px, $primary-bg-start, text, text, transparent,65px);
     }
     .icon-3{
         display: flex;
@@ -371,15 +360,8 @@
         text-align: center;
         margin-top: 20px;
     }
-    .icon-3::before {
-        content: "";
-        font-family: "Font Awesome 6 Free";
-        font-size: 45px;
-        background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 65px;
+    .icon-3::before{
+        @include awesome-icon-1("\f1c9", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
     }
     .icon-4{
         display: flex;
@@ -388,15 +370,8 @@
         text-align: center;
         margin-top: 20px;
     }
-    .icon-4::before {
-        content: "";
-        font-family: "Font Awesome 6 Free";
-        font-size: 45px;
-        background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 65px;
+    .icon-4::before{
+        @include awesome-icon-1("\f245", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
     }
     .icon-5{
         display: flex;
@@ -405,15 +380,8 @@
         text-align: center;
         margin-top: 20px;
     }
-    .icon-5::before {
-        content: "";
-        font-family: "Font Awesome 6 Free";
-        font-size: 45px;
-        background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 65px;
+    .icon-5::before{
+        @include awesome-icon-1("\f5ad", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
     }
     .icon-6{
         display: flex;
@@ -422,15 +390,8 @@
         text-align: center;
         margin-top: 20px;
     }
-    .icon-6::before {
-        content: "";
-        font-family: "Font Awesome 6 Free";
-        font-size: 45px;
-        background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 65px;
+    .icon-6::before{
+        @include awesome-icon-1("\f390", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
     }
 }  
 
@@ -442,37 +403,129 @@
 /*!-----------------------------------------------------------------------------------------*/
 /*!-----------------------MAIN PAGE SERVICES--------------------------------------------------*/
 
-body{
-    section{
-        .titulo-services{
-            font-size: 40px;
-            margin: 10px;
-            text-align: center;
-            margin-bottom: 50px;
-            margin-top: 50px;
+@media (max-width: 768px) {
+    body{
+        section{
+            .titulo-services{
+                font-size: 40px;
+                margin: 10px;
+                text-align: center;
+                margin-bottom: 50px;
+                margin-top: 50px;
+            }
+            .texto-services{
+                font-size: 20px;
+                margin: 30px;
+                text-align: center;
+                margin-bottom: 50px;
+            }
         }
-        .texto-services{
-            font-size: 20px;
-            margin: 30px;
-            text-align: center;
-            margin-bottom: 50px;
+        .grid-container-services{
+            display: grid;
+            grid-template-columns: repeat(2, 120px);
+            justify-content: center;
+            gap: 20px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            color: white;
+        }
+        .grid-services {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(100px, 400px));
+            grid-template-rows: repeat(6, minmax(80px, 200px));
+            gap: 31px;
+            margin: 50px;
+            justify-content: center;
         }
     }
-    .grid-container-services{
+}    
+
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------MAIN PAGE ABOUT ME--------------------------------------------------*/
+
+@media (max-width: 768px){
+    .hero{
         display: grid;
-        grid-template-columns: repeat(2, 120px);
-        justify-content: center;
-        gap: 20px;
-        margin-top: 100px;
-        margin-bottom: 100px;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        div{
+            h2{
+                font-size: 40px;
+                margin: 10px;
+                text-align: center;
+                margin-bottom: 50px;
+                margin-top: 10px;
+            }
+            p{
+                font-size: 20px;
+                margin: 30px;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+        }
+        div{
+            padding: 0% 0 0 0;
+            img{
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------MAIN CONTACTO--------------------------------------------------*/
+@media (max-width: 768px) {
+    body {
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    * {
+        .container {
+            width: 322px !important;
+            .bg-primary {
+
+            }
+        }
+    }
+    .row {
+        --bs-gutter-x: 4rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-left: calc(-.5 * var(--bs-gutter-x));
+
+        .col-md-4.bg-primary.p-5.text-white {
+            order: 1; 
+        }
+
+        .col-md-8.p-5 {
+            order: 2; 
+        }
+    }
+
+    h2 {
         color: white;
+        font-size: 60px;
+        margin: 12px;
+        font-weight: bold;
+        font-family: 'Urbanist', sans-serif;
+        text-align: center;
     }
-    .grid-services {
-        display: grid;
-        grid-template-columns: repeat(1, minmax(100px, 400px));
-        grid-template-rows: repeat(6, minmax(80px, 200px));
-        gap: 31px;
-        margin: 50px;
-        justify-content: center;
-    }
+    
 }

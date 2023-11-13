@@ -87,6 +87,9 @@ $button-2: (
     margin: $margin;
     justify-content: $justify-content;
 }
+.grid-services {
+    @include grid-s(3, 300px, 450px, 2, 80px, 200px, 10px, 50px, center, 1px solid #ffffff, 24px);
+}
 
 @mixin item($border, $justify-content, $align-items, $font-size) {
     display: flex;
@@ -95,13 +98,43 @@ $button-2: (
     align-items: $align-items;
     font-size: $font-size;
 }
-
-.grid-services {
-    @include grid-s(3, 300px, 450px, 2, 80px, 200px, 10px, 50px, center, 1px solid #ffffff, 24px);
-}
-
 .item {
     @include item(1px solid #ffffff, center, center, 24px);
+}
+
+@mixin awesome-icon-1($content, $font-family, $font-size, $background-image, $background-clip, $web-background-clip, $text-fill-color, $margin-bottom) {
+    content: $content;
+    font-family: $font-family;
+    font-size: $font-size;
+    background-image: $background-image;
+    background-clip: $background-clip;
+    -webkit-background-clip: $web-background-clip;
+    -webkit-text-fill-color: $text-fill-color;
+    margin-bottom: $margin-bottom;
+}
+
+.icon-1::before {
+    @include awesome-icon-1("\f121", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
+}
+
+.icon-2::before{
+    @include awesome-icon-1("\f5fc", "Font Awesome 6 Free",  45px, $primary-bg-start, text, text, transparent,65px);
+}
+
+.icon-3::before{
+    @include awesome-icon-1("\f1c9", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
+}
+
+.icon-4::before{
+    @include awesome-icon-1("\f245", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
+}
+
+.icon-5::before{
+    @include awesome-icon-1("\f5ad", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
+}
+
+.icon-6::before{
+    @include awesome-icon-1("\f390", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
 }
 
 @mixin awesome-icon($content, $font-family, $position, $top, $left, $font-size, $background-image, $background-clip, $text-fill-color) {
