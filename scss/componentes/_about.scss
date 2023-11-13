@@ -1,0 +1,47 @@
+.hero{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    div{
+        align-self: center;
+        h2{
+            color: $color-secundario;
+            font-size: 60px;
+            margin: 50px;
+            font-weight: bold;
+            font-family: 'Urbanist', sans-serif;
+
+        }
+        p{
+            font-size: 22px; 
+            color: $color-secundario;
+            text-align: justify;
+            line-height: 150%;
+            margin: 50px;
+            font-family: 'Urbanist', sans-serif;
+
+        }
+        a{
+            .button {
+                background-color: map-get($button, background-color);
+                font-size: map-get($button, font-size);
+                font-weight: map-get($button, font-weight);
+                color: map-get($button, color);
+                padding: map-get($button, padding);
+                display: map-get($button, display);
+                margin: map-get($button, margin);
+                border: map-get($button, border);
+                border-radius: map-get($button, border-radius);
+                cursor: map-get($button, cursor);
+            }
+
+        }
+    }
+    div{
+        padding: 30% 0 0 0;
+        img{
+            width: 300px; 
+            height: 300px; 
+            border-radius: 50%;
+        }
+    }
+}

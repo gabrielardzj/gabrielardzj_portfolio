@@ -1,0 +1,25 @@
+footer{
+    .redes-sociales{
+        ul{
+            list-style-type: none; 
+            padding: 0; 
+            text-align: center;
+            color: #fff; 
+            display: grid; 
+            grid-template-columns: 150px 150px 150px 150px;
+            place-content: center;
+                li{
+                    margin: 50px;
+                    padding: 0;
+                        i{
+                            font-size: 24px; 
+                            vertical-align: middle; 
+                            a{
+                                color: #fff;
+                            }
+                        }
+                }
+        }
+    }
+}   
+

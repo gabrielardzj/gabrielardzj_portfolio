@@ -1,0 +1,175 @@
+$color-primario:#181620;
+$color-secundario:#fff;
+$color-terciario:linear-gradient(to bottom, #701FE1, #5E35DF);
+$primary-bg-start: #701FE1;
+$font-stack: 'Urbanist', sans-serif;
+
+
+$size-primario: 85px;
+$size-secundario:65px;
+$size-terciario:45px;
+
+$button: (
+    background-color: $primary-bg-start,
+    font-size: 16px,
+    font-weight: bold,
+    color: white,
+    padding: 15px 32px,
+    display: block,
+    margin: 0 auto,
+    border: none,
+    border-radius: 15px,
+    cursor: pointer
+);
+
+.button-generico {
+    background-color: map-get($button, background-color);
+    font-size: map-get($button, font-size);
+    font-weight: map-get($button, font-weight);
+    color: map-get($button, color);
+    padding: map-get($button, padding);
+    display: map-get($button, display);
+    margin: map-get($button, margin);
+    border: map-get($button, border);
+    border-radius: map-get($button, border-radius);
+    cursor: map-get($button, cursor);
+}
+
+$button-2: (
+    background-color: $primary-bg-start,
+    font-size: 12px,
+    font-weight: bold,
+    color: white,
+    padding: 10px 27px,
+    display: block,
+    margin-top: 50px,
+    border: none,
+    border-radius: 12px,
+    cursor: pointer
+);
+
+.button-responsive {
+    background-color: map-get($button-2, background-color);
+    font-size: map-get($button-2, font-size);
+    font-weight: map-get($button-2, font-weight);
+    color: map-get($button-2, color);
+    padding: map-get($button-2, padding);
+    display: map-get($button-2, display);
+    margin: map-get($button-2, margin-top);
+    border: map-get($button-2, border);
+    border-radius: map-get($button-2, border-radius);
+    cursor: map-get($button-2, cursor);
+}
+
+
+
+
+
+@mixin grid($columns, $column-width, $gap, $justify-content, $margin-top, $margin-bottom, $color) {
+    display: grid;
+    grid-template-columns: repeat($columns, $column-width);
+    justify-content: $justify-content;
+    gap: $gap;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+    color: $color;
+}
+
+.grid-container-services{
+    @include grid (4, 300px, 20px, center, 100px, 100px, white);
+}
+
+@mixin grid-s($columns, $min-column-width, $max-column-width, $rows, $min-row-height, $max-row-height, $gap, $margin, $justify-content, $item-border, $item-font-size) {
+    display: grid;
+    grid-template-columns: repeat($columns, minmax($min-column-width, $max-column-width));
+    grid-template-rows: repeat($rows, minmax($min-row-height, $max-row-height));
+    gap: $gap;
+    margin: $margin;
+    justify-content: $justify-content;
+}
+.grid-services {
+    @include grid-s(3, 300px, 450px, 2, 80px, 200px, 10px, 50px, center, 1px solid #ffffff, 24px);
+}
+
+@mixin item($border, $justify-content, $align-items, $font-size) {
+    display: flex;
+    border: $border;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    font-size: $font-size;
+}
+.item {
+    @include item(1px solid #ffffff, center, center, 24px);
+}
+
+@mixin awesome-icon-1($content, $font-family, $font-size, $background-image, $background-clip, $web-background-clip, $text-fill-color, $margin-bottom) {
+    content: $content;
+    font-family: $font-family;
+    font-size: $font-size;
+    background-image: $background-image;
+    background-clip: $background-clip;
+    -webkit-background-clip: $web-background-clip;
+    -webkit-text-fill-color: $text-fill-color;
+    margin-bottom: $margin-bottom;
+}
+
+.icon-1::before {
+    @include awesome-icon-1("\f121", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
+}
+
+.icon-2::before{
+    @include awesome-icon-1("\f5fc", "Font Awesome 6 Free",  45px, $primary-bg-start, text, text, transparent,65px);
+}
+
+.icon-3::before{
+    @include awesome-icon-1("\f1c9", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
+}
+
+.icon-4::before{
+    @include awesome-icon-1("\f245", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
+}
+
+.icon-5::before{
+    @include awesome-icon-1("\f5ad", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
+}
+
+.icon-6::before{
+    @include awesome-icon-1("\f390", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
+}
+
+@mixin awesome-icon($content, $font-family, $position, $top, $left, $font-size, $background-image, $background-clip, $text-fill-color) {
+    content: $content;
+    font-family: $font-family;
+    position: $position;
+    top: $top;
+    left: $left;
+    font-size: $font-size;
+    background-image: $background-image;
+    background-clip: $background-clip;
+    -webkit-background-clip: $background-clip;
+    -webkit-text-fill-color: $text-fill-color;
+}
+
+.icon-1::before {
+    @include awesome-icon("\f121", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+}
+
+.icon-2::before{
+    @include awesome-icon("\f5fc", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+}
+
+.icon-3::before{
+    @include awesome-icon("\f1c9", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+}
+
+.icon-4::before{
+    @include awesome-icon("\f245", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+}
+
+.icon-5::before{
+    @include awesome-icon("\f5ad", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+}
+
+.icon-6::before{
+    @include awesome-icon("\f390", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+}

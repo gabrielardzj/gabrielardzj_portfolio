@@ -1,0 +1,1299 @@
+@charset "UTF-8";
+.button-generico {
+  background-color: #701FE1;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding: 15px 32px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer; }
+
+.button-responsive {
+  background-color: #701FE1;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 10px 27px;
+  display: block;
+  margin: 50px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer; }
+
+.grid-container-services {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  justify-content: center;
+  gap: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: white; }
+
+.grid-services {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 450px));
+  grid-template-rows: repeat(2, minmax(80px, 200px));
+  gap: 10px;
+  margin: 50px;
+  justify-content: center; }
+
+.item {
+  display: flex;
+  border: 1px solid #ffffff;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px; }
+
+.icon-1::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-2::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-3::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-4::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-5::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-6::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-1::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 20;
+  left: 30;
+  font-size: 45px;
+  background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.icon-2::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 20;
+  left: 30;
+  font-size: 45px;
+  background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.icon-3::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 20;
+  left: 30;
+  font-size: 45px;
+  background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.icon-4::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 20;
+  left: 30;
+  font-size: 45px;
+  background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.icon-5::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 20;
+  left: 30;
+  font-size: 45px;
+  background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.icon-6::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 20;
+  left: 30;
+  font-size: 45px;
+  background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+body {
+  background-color: #181620;
+  font-family: 'Urbanist', sans-serif; }
+
+h2 {
+  color: white;
+  font-size: 60px;
+  margin: 50px;
+  font-weight: bold;
+  font-family: 'Urbanist', sans-serif; }
+
+.texto-principal {
+  color: white;
+  font-size: 85px;
+  font-weight: bold;
+  margin: 50px;
+  font-family: 'Urbanist', sans-serif; }
+
+.parrafos-genericos {
+  font-size: 22px;
+  color: white;
+  text-align: justify;
+  line-height: 150%;
+  margin: 50px;
+  font-family: 'Urbanist', sans-serif; }
+
+body {
+  background-color: #181620; }
+  body header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 22px; }
+    body header h1 {
+      color: white; }
+    body header div img {
+      height: 50px; }
+    body header nav ul {
+      list-style: none;
+      display: flex; }
+      body header nav ul li {
+        margin-right: 18px; }
+        body header nav ul li a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 22px;
+          font-weight: bold;
+          padding: 10px;
+          border-radius: 5px; }
+          body header nav ul li a:hover {
+            background-color: #fff;
+            border-radius: 25px;
+            color: white;
+            background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+            font-family: 'Urbanist', sans-serif;
+            font-size: 22px; }
+
+.button-generico {
+  background-color: #701FE1;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding: 15px 32px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer; }
+
+.button-responsive {
+  background-color: #701FE1;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 10px 27px;
+  display: block;
+  margin: 50px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer; }
+
+.grid-container-services {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  justify-content: center;
+  gap: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: white; }
+
+.grid-services {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 450px));
+  grid-template-rows: repeat(2, minmax(80px, 200px));
+  gap: 10px;
+  margin: 50px;
+  justify-content: center; }
+
+.item {
+  display: flex;
+  border: 1px solid #ffffff;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px; }
+
+.icon-1::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-2::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-3::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-4::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-5::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-6::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-1::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 20;
+  left: 30;
+  font-size: 45px;
+  background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.icon-2::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 20;
+  left: 30;
+  font-size: 45px;
+  background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.icon-3::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 20;
+  left: 30;
+  font-size: 45px;
+  background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.icon-4::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 20;
+  left: 30;
+  font-size: 45px;
+  background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.icon-5::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 20;
+  left: 30;
+  font-size: 45px;
+  background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.icon-6::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 20;
+  left: 30;
+  font-size: 45px;
+  background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+body {
+  background-color: #181620; }
+  body main {
+    max-width: 1200px;
+    margin: 0 auto;
+    /*!-----------------------INDEX HABILIDADES PERSONALES--------------------------------------*/
+    /*!-----------------------PRUEBA CON GRIDS--------------------------------------*/
+    /*!-----------------------PRUEBA CON GRIDS 2.0--------------------------------------*/
+    /*!---------------------------------------------------------------------------*/
+    /*!---------------------------------------------------------------------------*/ }
+    body main .texto-principal p {
+      color: #fff;
+      font-size: 85px;
+      font-weight: bold;
+      margin: 50px;
+      font-family: 'Urbanist', sans-serif; }
+    body main .texto-principal a .button {
+      background-color: #701FE1;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      padding: 15px 32px;
+      display: block;
+      margin: 0 auto;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer; }
+    body main .grid-container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px 300px;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 200px;
+      margin-bottom: 100px;
+      color: #fff; }
+      body main .grid-container div {
+        position: relative;
+        text-align: center;
+        padding-top: 50px; }
+        body main .grid-container div i {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 30px;
+          margin-bottom: 10px;
+          background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; }
+        body main .grid-container div p {
+          margin-top: 20px;
+          font-family: 'Urbanist', sans-serif;
+          font-weight: bold;
+          font-size: 25px; }
+        body main .grid-container div p:nth-of-type(2) {
+          font-size: 12px;
+          text-align: center;
+          font-family: 'Urbanist', sans-serif;
+          font-weight: lighter; }
+    body main .hero {
+      display: grid;
+      grid-template-columns: 3fr 2fr; }
+      body main .hero div {
+        align-self: center; }
+        body main .hero div h2 {
+          color: #fff;
+          font-size: 60px;
+          margin: 50px;
+          font-weight: bold;
+          font-family: 'Urbanist', sans-serif; }
+        body main .hero div p {
+          font-size: 22px;
+          color: #fff;
+          text-align: justify;
+          line-height: 150%;
+          margin: 50px;
+          font-family: 'Urbanist', sans-serif; }
+        body main .hero div a .button {
+          background-color: #701FE1;
+          font-size: 16px;
+          font-weight: bold;
+          color: white;
+          padding: 15px 32px;
+          display: block;
+          margin: 0 auto;
+          border: none;
+          border-radius: 15px;
+          cursor: pointer; }
+      body main .hero div {
+        padding: 30% 0 0 0; }
+        body main .hero div img {
+          width: 300px;
+          height: 300px;
+          border-radius: 50%; }
+    body main .skills {
+      text-align: center; }
+      body main .skills h2 {
+        color: #fff;
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 20px; }
+      body main .skills div {
+        display: inline-block;
+        text-align: center;
+        margin: 30px; }
+        body main .skills div img {
+          width: 180px;
+          height: auto; }
+        body main .skills div p {
+          font-size: 16px;
+          color: #fff;
+          margin-top: 5px;
+          font-family: 'Urbanist', sans-serif; }
+      body main .skills a .button {
+        background-color: #701FE1;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        padding: 15px 32px;
+        display: block;
+        margin: 0 auto;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer; }
+    body main .services h2 {
+      color: #fff;
+      font-size: 45px;
+      text-align: center; }
+    body main .services .services-grid {
+      display: grid;
+      grid-template-columns: 250px 250px 250px;
+      grid-template-rows: 100px 100px;
+      grid-template-areas: "one two two" "three three four" "five six seven";
+      place-content: center;
+      grid-gap: 100px;
+      margin-left: 125px; }
+      body main .services .services-grid div i {
+        font-size: 60px;
+        background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 30px; }
+      body main .services .services-grid div p {
+        margin-top: 10px;
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Urbanist', sans-serif; }
+    body main .services a .button {
+      background-color: #701FE1;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      padding: 15px 32px;
+      display: block;
+      margin: 0 auto;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer; }
+    body main .trabajar-juntos h3 {
+      color: #fff;
+      font-size: 60px; }
+    body main .trabajar-juntos p {
+      font-size: 22px;
+      color: #fff;
+      text-align: left; }
+    body main .trabajar-juntos a .button {
+      background-color: #701FE1;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      padding: 15px 32px;
+      display: block;
+      margin: 0 auto;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+  * .container {
+    width: 1100px !important; }
+    * .container .bg-primary {
+      background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+      font-family: 'Urbanist', sans-serif; }
+  * .col-md-4.bg-primary.p-5.text-white.order-sm-first.order-last h2 {
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold; }
+  * .col-md-4.bg-primary.p-5.text-white.order-sm-first.order-last p {
+    font-size: 20px;
+    color: #fff;
+    text-align: center; }
+  * .col-md-4.bg-primary.p-5.text-white.order-sm-first.order-last div .mt-4.ms-3 {
+    font-size: 20px;
+    color: #fff;
+    text-align: center; }
+  * .bg-primary {
+    background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+    font-family: 'Urbanist', sans-serif; }
+  * .form-control {
+    height: 36px;
+    background: #fff;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 8px;
+    box-shadow: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.1); }
+    * .form-control.contactForm {
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 0; }
+    * .form-control:focus, * .form-control:active {
+      border-color: #701FE1 !important; }
+  * .form-label {
+    color: #fff;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0.5rem; }
+  * .btn.btn-primary {
+    font-size: 16px;
+    padding: 15px 25px;
+    display: block;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold; }
+    * .btn.btn-primary:hover {
+      background-image: linear-gradient(to bottom, #701FE1, #5E35DF); }
+  * .bi {
+    font-size: 50px; }
+
+.hero {
+  display: grid;
+  grid-template-columns: 3fr 2fr; }
+  .hero div {
+    align-self: center; }
+    .hero div h2 {
+      color: #fff;
+      font-size: 60px;
+      margin: 50px;
+      font-weight: bold;
+      font-family: 'Urbanist', sans-serif; }
+    .hero div p {
+      font-size: 22px;
+      color: #fff;
+      text-align: justify;
+      line-height: 150%;
+      margin: 50px;
+      font-family: 'Urbanist', sans-serif; }
+    .hero div a .button {
+      background-color: #701FE1;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      padding: 15px 32px;
+      display: block;
+      margin: 0 auto;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer; }
+  .hero div {
+    padding: 30% 0 0 0; }
+    .hero div img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%; }
+
+body section .titulo-services {
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 80px;
+  margin: 50px;
+  font-family: 'Urbanist', sans-serif; }
+
+body section .texto-services {
+  text-align: center;
+  padding: 10px;
+  font-size: 22px;
+  color: white;
+  line-height: 150%;
+  margin: 50px;
+  font-family: 'Urbanist', sans-serif; }
+
+body section a .button {
+  background-color: #701FE1;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding: 15px 32px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer; }
+
+body .grid-container-services {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  justify-content: center;
+  gap: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: white; }
+  body .grid-container-services .grid-item-services {
+    position: relative;
+    text-align: center;
+    padding-top: 50px; }
+    body .grid-container-services .grid-item-services i {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 30px;
+      margin-bottom: 10px;
+      background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+
+body .grid-services {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 450px));
+  grid-template-rows: repeat(2, minmax(80px, 200px));
+  gap: 10px;
+  margin: 50px;
+  justify-content: center; }
+  body .grid-services .item {
+    display: flex;
+    border: 1px solid #ffffff;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; }
+
+body .texto-principal-skill {
+  font-size: 85px;
+  font-weight: bold;
+  font-family: 'Urbanist', sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 50px; }
+
+body .texto-principal-skill-2 {
+  font-size: 65px;
+  font-weight: bold;
+  margin: 50px 50px 50px 280px;
+  font-family: 'Urbanist', sans-serif;
+  color: white; }
+
+body .grid-skills {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 250px));
+  grid-template-rows: repeat(2, minmax(150px, 250px));
+  gap: 80px;
+  margin: 50px;
+  justify-content: center; }
+  body .grid-skills .item-skill {
+    background-color: #2c283d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    position: relative; }
+    body .grid-skills .item-skill .icon-1::before {
+      content: "";
+      font-family: "Font Awesome 6 Free";
+      position: absolute;
+      top: 20;
+      left: 30;
+      font-size: 45px;
+      background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    body .grid-skills .item-skill .icon-2::before {
+      content: "";
+      font-family: "Font Awesome 6 Free";
+      position: absolute;
+      top: 20;
+      left: 30;
+      font-size: 45px;
+      background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    body .grid-skills .item-skill .icon-3::before {
+      content: "";
+      font-family: "Font Awesome 6 Free";
+      position: absolute;
+      top: 20;
+      left: 30;
+      font-size: 45px;
+      background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    body .grid-skills .item-skill .icon-4::before {
+      content: "";
+      font-family: "Font Awesome 6 Free";
+      position: absolute;
+      top: 20;
+      left: 30;
+      font-size: 45px;
+      background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    body .grid-skills .item-skill .icon-5::before {
+      content: "";
+      font-family: "Font Awesome 6 Free";
+      position: absolute;
+      top: 20;
+      left: 30;
+      font-size: 45px;
+      background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    body .grid-skills .item-skill .icon-6::before {
+      content: "";
+      font-family: "Font Awesome 6 Free";
+      position: absolute;
+      top: 20;
+      left: 30;
+      font-size: 45px;
+      background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+
+footer .redes-sociales ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  place-content: center; }
+  footer .redes-sociales ul li {
+    margin: 50px;
+    padding: 0; }
+    footer .redes-sociales ul li i {
+      font-size: 24px;
+      vertical-align: middle; }
+      footer .redes-sociales ul li i a {
+        color: #fff; }
+
+/*!-------------HEADER----------------------------------------------------------------------*/
+@media (max-width: 768px) {
+  body {
+    background-color: #181620;
+    overflow-x: hidden;
+    align-self: center; }
+    body header {
+      flex-direction: column;
+      align-items: flex-start; }
+      body header .logo img {
+        display: none; }
+      body header nav {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: 10px; }
+        body header nav ul {
+          width: 100%;
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          justify-items: center;
+          align-items: center; }
+          body header nav ul li {
+            margin-right: 0;
+            margin-bottom: 10px; }
+            body header nav ul li a {
+              font-size: 10px; } }
+
+/*!-------------MAIN INFO PERSONAL----------------------------------------------------------------------*/
+@media (max-width: 768px) {
+  body main {
+    flex-direction: row;
+    align-items: flex-start; }
+    body main .texto-principal p {
+      font-size: 40px;
+      margin: 10px;
+      text-align: center;
+      margin-bottom: 50px; }
+    body main .texto-principal .button-responsive {
+      background-color: #701FE1;
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+      padding: 10px 27px;
+      display: block;
+      margin: 50px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer; }
+    body main .grid-container {
+      grid-template-columns: 200px;
+      margin-top: 100px;
+      margin-bottom: 5px; }
+    body main .grid-item p:nth-of-type(2) {
+      font-size: 10px;
+      display: none; } }
+
+/*!-----------------------PRUEBA CON GRIDS--------------------------------------*/
+@media (max-width: 768px) {
+  body main .hero {
+    flex-direction: row;
+    align-items: flex-start; }
+    body main .hero div h2 {
+      font-size: 40px;
+      margin: 40px;
+      width: 120%;
+      text-align: center; }
+    body main .hero div p {
+      font-size: 20px;
+      margin: 30px;
+      width: 130%; }
+    body main .hero div a .button-responsive {
+      background-color: #701FE1;
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+      padding: 10px 27px;
+      display: block;
+      margin: 50px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer; }
+    body main .hero div img {
+      display: none; } }
+
+/*!-----------------------PRUEBA CON GRIDS 2.0--------------------------------------*/
+@media (max-width: 768px) {
+  .skills {
+    text-align: center; }
+    .skills h2 {
+      color: #fff;
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 50px; }
+    .skills div {
+      display: inline-block;
+      text-align: center;
+      margin: 30px; }
+      .skills div img {
+        width: 180px;
+        height: auto; }
+      .skills div p {
+        font-size: 14px;
+        font-family: 'Urbanist', sans-serif; }
+    .skills a .button-responsive {
+      background-color: #701FE1;
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+      padding: 10px 27px;
+      display: block;
+      margin: 50px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer; } }
+
+/*!-----------------------INDEX SERVICES----------------------------------------------------*/
+@media (max-width: 768px) {
+  body main .services {
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    body main .services h2 {
+      font-size: 30px;
+      margin-top: 50px;
+      margin-bottom: 50px; }
+    body main .services .services-grid {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas: "one" "two" "three" "four" "five" "six" "seven";
+      margin-right: 120px; }
+      body main .services .services-grid div i {
+        font-size: 45px;
+        margin-bottom: 0; }
+      body main .services .services-grid div p {
+        font-size: 20px;
+        font-family: 'Urbanist', sans-serif; }
+    body main .services .button-responsive {
+      background-color: #701FE1;
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+      padding: 10px 27px;
+      display: block;
+      margin: 50px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer; } }
+
+/*!-----------------------INDEX TRABAJAR JUNTOS----------------------------------------------*/
+@media (max-width: 768px) {
+  body main .trabajar-juntos h3 {
+    font-size: 50px;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px; }
+  body main .trabajar-juntos p {
+    font-size: 20px;
+    margin: 30px;
+    text-align: justify;
+    margin-bottom: 50px; }
+  body main .trabajar-juntos .button-responsive {
+    background-color: #701FE1;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 27px;
+    display: block;
+    margin: 50px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer; } }
+
+/*!------------FOOTER-----------------------------------------------------------------------*/
+@media (max-width: 768px) {
+  footer .redes-sociales ul {
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 0;
+    margin-top: 50px; }
+    footer .redes-sociales ul li {
+      margin: 20px; }
+      footer .redes-sociales ul li span {
+        display: none; }
+  footer a {
+    display: none; } }
+
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------MAIN PAGE SKILLS--------------------------------------------------*/
+@media (max-width: 768px) {
+  body .texto-principal-skill {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 50px; }
+  body .texto-principal-skill-2 {
+    font-size: 30px;
+    margin: 50px;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+    text-align: center; }
+  body .grid-skills {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(150px, 250px));
+    grid-template-rows: repeat(6, minmax(80px, 200px));
+    gap: 80px;
+    margin: 50px;
+    justify-content: center; }
+    body .grid-skills .item-skill {
+      background-color: #2c283d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: white;
+      font-family: 'Urbanist', sans-serif;
+      font-weight: bold;
+      position: relative; }
+  p {
+    margin-top: 40px;
+    margin-bottom: 0; }
+  .icon-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; }
+  .icon-1::before {
+    content: "";
+    font-family: "Font Awesome 6 Free";
+    font-size: 45px;
+    background-image: #701FE1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 65px; }
+  .icon-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; }
+  .icon-2::before {
+    content: "";
+    font-family: "Font Awesome 6 Free";
+    font-size: 45px;
+    background-image: #701FE1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 65px; }
+  .icon-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; }
+  .icon-3::before {
+    content: "";
+    font-family: "Font Awesome 6 Free";
+    font-size: 45px;
+    background-image: #701FE1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 65px; }
+  .icon-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; }
+  .icon-4::before {
+    content: "";
+    font-family: "Font Awesome 6 Free";
+    font-size: 45px;
+    background-image: #701FE1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 65px; }
+  .icon-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; }
+  .icon-5::before {
+    content: "";
+    font-family: "Font Awesome 6 Free";
+    font-size: 45px;
+    background-image: #701FE1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 65px; }
+  .icon-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; }
+  .icon-6::before {
+    content: "";
+    font-family: "Font Awesome 6 Free";
+    font-size: 45px;
+    background-image: #701FE1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 65px; } }
+
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------MAIN PAGE SERVICES--------------------------------------------------*/
+@media (max-width: 768px) {
+  body section .titulo-services {
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px; }
+  body section .texto-services {
+    font-size: 20px;
+    margin: 30px;
+    text-align: center;
+    margin-bottom: 50px; }
+  body .grid-container-services {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    justify-content: center;
+    gap: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: white; }
+  body .grid-services {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px, 400px));
+    grid-template-rows: repeat(6, minmax(80px, 200px));
+    gap: 31px;
+    margin: 50px;
+    justify-content: center; } }
+
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------MAIN PAGE ABOUT ME--------------------------------------------------*/
+@media (max-width: 768px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px; }
+    .hero div h2 {
+      font-size: 40px;
+      margin: 10px;
+      text-align: center;
+      margin-bottom: 50px;
+      margin-top: 10px; }
+    .hero div p {
+      font-size: 20px;
+      margin: 30px;
+      text-align: center;
+      margin-bottom: 50px; }
+    .hero div {
+      padding: 0% 0 0 0; }
+      .hero div img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%; } }
+
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------MAIN CONTACTO--------------------------------------------------*/
+@media (max-width: 768px) {
+  body header {
+    flex-direction: column;
+    align-items: flex-start; }
+  * .container {
+    width: 322px !important; }
+  .row {
+    --bs-gutter-x: 4rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x)); }
+    .row .col-md-4.bg-primary.p-5.text-white {
+      order: 1; }
+    .row .col-md-8.p-5 {
+      order: 2; }
+  h2 {
+    color: white;
+    font-size: 60px;
+    margin: 12px;
+    font-weight: bold;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center; } }
