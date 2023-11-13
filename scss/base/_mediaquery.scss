@@ -34,6 +34,14 @@
                         a{
                             font-size: 10px;
                         }
+                        a:hover {
+                            background-color: #fff;
+                            border-radius: 30px; 
+                            color: white;
+                            background-image: linear-gradient(to bottom, #701FE1, #5E35DF); 
+                            font-family: 'Urbanist', sans-serif;
+                            font-size: 12px;
+                        }
                     }
                 }
             } 

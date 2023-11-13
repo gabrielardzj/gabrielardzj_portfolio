@@ -1,3 +1,15 @@
+@keyframes blur-in-expand {
+    0% {
+        transform: scale(0);
+        filter: blur(5px);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +29,7 @@
             font-size: 45px; 
             text-align: center;
             font-weight: bold;
+            animation: blur-in-expand 0.8s linear both; 
         }
     
         p {
