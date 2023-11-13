@@ -10,7 +10,7 @@ $size-secundario:65px;
 $size-terciario:45px;
 
 $button: (
-    background-color: linear-gradient(to bottom, #701FE1, #5E35DF),
+    background-color: $primary-bg-start,
     font-size: 16px,
     font-weight: bold,
     color: white,
@@ -22,7 +22,7 @@ $button: (
     cursor: pointer
 );
 
-.button {
+.button-generico {
     background-color: map-get($button, background-color);
     font-size: map-get($button, font-size);
     font-weight: map-get($button, font-weight);
@@ -34,6 +34,33 @@ $button: (
     border-radius: map-get($button, border-radius);
     cursor: map-get($button, cursor);
 }
+
+$button-2: (
+    background-color: $primary-bg-start,
+    font-size: 12px,
+    font-weight: bold,
+    color: white,
+    padding: 10px 27px,
+    display: block,
+    margin-top: 50px,
+    border: none,
+    border-radius: 12px,
+    cursor: pointer
+);
+
+.button-responsive {
+    background-color: map-get($button-2, background-color);
+    font-size: map-get($button-2, font-size);
+    font-weight: map-get($button-2, font-weight);
+    color: map-get($button-2, color);
+    padding: map-get($button-2, padding);
+    display: map-get($button-2, display);
+    margin: map-get($button-2, margin-top);
+    border: map-get($button-2, border);
+    border-radius: map-get($button-2, border-radius);
+    cursor: map-get($button-2, cursor);
+}
+
 
 
 

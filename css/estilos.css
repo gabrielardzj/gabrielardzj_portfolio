@@ -1,6 +1,6 @@
 @charset "UTF-8";
-.button {
-  background-color: linear-gradient(to bottom, #701FE1, #5E35DF);
+.button-generico {
+  background-color: #701FE1;
   font-size: 16px;
   font-weight: bold;
   color: white;
@@ -9,6 +9,18 @@
   margin: 0 auto;
   border: none;
   border-radius: 15px;
+  cursor: pointer; }
+
+.button-responsive {
+  background-color: #701FE1;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 10px 27px;
+  display: block;
+  margin: 50px;
+  border: none;
+  border-radius: 12px;
   cursor: pointer; }
 
 .grid-container-services {
@@ -140,8 +152,8 @@ body {
             font-family: 'Urbanist', sans-serif;
             font-size: 22px; }
 
-.button {
-  background-color: linear-gradient(to bottom, #701FE1, #5E35DF);
+.button-generico {
+  background-color: #701FE1;
   font-size: 16px;
   font-weight: bold;
   color: white;
@@ -150,6 +162,18 @@ body {
   margin: 0 auto;
   border: none;
   border-radius: 15px;
+  cursor: pointer; }
+
+.button-responsive {
+  background-color: #701FE1;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 10px 27px;
+  display: block;
+  margin: 50px;
+  border: none;
+  border-radius: 12px;
   cursor: pointer; }
 
 .grid-container-services {
@@ -265,7 +289,7 @@ body {
       margin: 50px;
       font-family: 'Urbanist', sans-serif; }
     body main .texto-principal a .button {
-      background-color: linear-gradient(to bottom, #701FE1, #5E35DF);
+      background-color: #701FE1;
       font-size: 16px;
       font-weight: bold;
       color: white;
@@ -327,7 +351,7 @@ body {
           margin: 50px;
           font-family: 'Urbanist', sans-serif; }
         body main .hero div a .button {
-          background-color: linear-gradient(to bottom, #701FE1, #5E35DF);
+          background-color: #701FE1;
           font-size: 16px;
           font-weight: bold;
           color: white;
@@ -363,7 +387,7 @@ body {
           margin-top: 5px;
           font-family: 'Urbanist', sans-serif; }
       body main .skills a .button {
-        background-color: linear-gradient(to bottom, #701FE1, #5E35DF);
+        background-color: #701FE1;
         font-size: 16px;
         font-weight: bold;
         color: white;
@@ -398,7 +422,7 @@ body {
         font-size: 20px;
         font-family: 'Urbanist', sans-serif; }
     body main .services a .button {
-      background-color: linear-gradient(to bottom, #701FE1, #5E35DF);
+      background-color: #701FE1;
       font-size: 16px;
       font-weight: bold;
       color: white;
@@ -416,7 +440,7 @@ body {
       color: #fff;
       text-align: left; }
     body main .trabajar-juntos a .button {
-      background-color: linear-gradient(to bottom, #701FE1, #5E35DF);
+      background-color: #701FE1;
       font-size: 16px;
       font-weight: bold;
       color: white;
@@ -507,7 +531,7 @@ body {
       margin: 50px;
       font-family: 'Urbanist', sans-serif; }
     .hero div a .button {
-      background-color: linear-gradient(to bottom, #701FE1, #5E35DF);
+      background-color: #701FE1;
       font-size: 16px;
       font-weight: bold;
       color: white;
@@ -543,7 +567,7 @@ body section .texto-services {
   font-family: 'Urbanist', sans-serif; }
 
 body section a .button {
-  background-color: linear-gradient(to bottom, #701FE1, #5E35DF);
+  background-color: #701FE1;
   font-size: 16px;
   font-weight: bold;
   color: white;
@@ -724,8 +748,7 @@ footer .redes-sociales ul {
         margin-top: 10px; }
         body header nav ul {
           flex-direction: column;
-          justify-content: space-between;
-          width: 100%; }
+          justify-content: space-between; }
           body header nav ul li {
             margin-right: 0;
             margin-bottom: 10px; }
@@ -738,41 +761,55 @@ footer .redes-sociales ul {
     flex-direction: row;
     align-items: flex-start; }
     body main .texto-principal p {
-      font-size: 30px;
+      font-size: 40px;
       margin: 10px;
-      width: 100%; }
-    body main .texto-principal .button {
-      font-size: 13px;
-      padding: 10px;
-      margin: 10px;
-      border-radius: 10px; }
+      text-align: center;
+      margin-bottom: 50px; }
+    body main .texto-principal .button-responsive {
+      background-color: #701FE1;
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+      padding: 10px 27px;
+      display: block;
+      margin: 50px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer; }
     body main .grid-container {
       grid-template-columns: 200px;
       margin-top: 100px;
-      margin-bottom: 50px; }
+      margin-bottom: 5px; }
     body main .grid-item p:nth-of-type(2) {
       font-size: 10px;
       display: none; } }
 
 /*!-----------------------PRUEBA CON GRIDS--------------------------------------*/
 @media (max-width: 768px) {
-  body .hero {
+  body main .hero {
     flex-direction: row;
     align-items: flex-start; }
-    body .hero h2 {
-      font-size: 45px;
-      margin: 20px;
-      width: 100%; }
-    body .hero p {
+    body main .hero div h2 {
+      font-size: 40px;
+      margin: 40px;
+      width: 120%;
+      text-align: center; }
+    body main .hero div p {
       font-size: 20px;
+      margin: 30px;
+      width: 130%; }
+    body main .hero div a .button-responsive {
+      background-color: #701FE1;
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+      padding: 10px 27px;
+      display: block;
       margin: 50px;
-      width: 100%; }
-    body .hero .button {
-      font-size: 13px;
-      padding: 10px 20px;
-      margin: 10px auto;
-      border-radius: 10px; }
-    body .hero img {
+      border: none;
+      border-radius: 12px;
+      cursor: pointer; }
+    body main .hero div img {
       display: none; } }
 
 /*!-----------------------PRUEBA CON GRIDS 2.0--------------------------------------*/
@@ -780,7 +817,11 @@ footer .redes-sociales ul {
   .skills {
     text-align: center; }
     .skills h2 {
-      font-size: 30px; }
+      color: #fff;
+      font-size: 45px;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 50px; }
     .skills div {
       display: inline-block;
       text-align: center;
@@ -791,11 +832,17 @@ footer .redes-sociales ul {
       .skills div p {
         font-size: 14px;
         font-family: 'Urbanist', sans-serif; }
-    .skills a .button {
-      font-size: 13px;
-      padding: 10px 20px;
-      margin: 10px auto;
-      border-radius: 10px; } }
+    .skills a .button-responsive {
+      background-color: #701FE1;
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+      padding: 10px 27px;
+      display: block;
+      margin: 50px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer; } }
 
 /*!-----------------------INDEX SERVICES----------------------------------------------------*/
 @media (max-width: 768px) {
@@ -804,7 +851,9 @@ footer .redes-sociales ul {
     align-items: center;
     text-align: center; }
     body main .services h2 {
-      font-size: 30px; }
+      font-size: 30px;
+      margin-top: 50px;
+      margin-bottom: 50px; }
     body main .services .services-grid {
       grid-template-columns: repeat(1, 1fr);
       grid-template-areas: "one" "two" "three" "four" "five" "six" "seven";
@@ -813,34 +862,102 @@ footer .redes-sociales ul {
         font-size: 45px;
         margin-bottom: 0; }
       body main .services .services-grid div p {
-        font-size: 20px; }
-    body main .services .button {
-      font-size: 13px;
-      padding: 10px 20px;
-      margin: 10px auto;
-      border-radius: 10px; } }
+        font-size: 20px;
+        font-family: 'Urbanist', sans-serif; }
+    body main .services .button-responsive {
+      background-color: #701FE1;
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+      padding: 10px 27px;
+      display: block;
+      margin: 50px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer; } }
 
 /*!-----------------------INDEX TRABAJAR JUNTOS----------------------------------------------*/
-.trabajar-juntos h3 {
-  font-size: 30px; }
-
-.trabajar-juntos p {
-  font-size: 18px;
-  text-align: center; }
-
-.trabajar-juntos .button {
-  font-size: 13px;
-  padding: 10px 20px;
-  margin: 10px auto;
-  border-radius: 10px; }
+@media (max-width: 768px) {
+  body main .trabajar-juntos h3 {
+    font-size: 50px;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px; }
+  body main .trabajar-juntos p {
+    font-size: 20px;
+    margin: 30px;
+    text-align: justify;
+    margin-bottom: 50px; }
+  body main .trabajar-juntos .button-responsive {
+    background-color: #701FE1;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 27px;
+    display: block;
+    margin: 50px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer; } }
 
 /*!------------FOOTER-----------------------------------------------------------------------*/
-footer .redes-sociales ul {
-  grid-template-columns: repeat(4, 1fr);
-  margin-left: 0; }
-  footer .redes-sociales ul li {
-    margin: 20px; }
-    footer .redes-sociales ul li span {
-      display: none; }
+@media (max-width: 768px) {
+  footer .redes-sociales ul {
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 0;
+    margin-top: 50px; }
+    footer .redes-sociales ul li {
+      margin: 20px; }
+      footer .redes-sociales ul li span {
+        display: none; } }
 
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
+/*!-----------------------------------------------------------------------------------------*/
 /*!-----------------------MAIN PAGE SKILLS--------------------------------------------------*/
+@media (max-width: 768px) {
+  body .texto-principal-skill {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 50px; }
+  body .texto-principal-skill-2 {
+    font-size: 45px;
+    margin: 50px;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+    text-align: center; }
+  body .grid-skills {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(150px, 250px));
+    grid-template-rows: repeat(6, minmax(150px, 250px));
+    gap: 80px;
+    margin: 50px;
+    justify-content: center; }
+    body .grid-skills .item-skill {
+      background-color: #2c283d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: white;
+      font-family: 'Urbanist', sans-serif;
+      font-weight: bold;
+      position: relative; }
+  .icon-1::before {
+    content: "";
+    font-family: "Font Awesome 6 Free";
+    position: static;
+    top: 5;
+    left: 30;
+    font-size: 45px;
+    background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; } }
