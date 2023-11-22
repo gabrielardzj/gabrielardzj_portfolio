@@ -282,6 +282,10 @@ body {
       body header div img {
         height: 100px;
         margin-left: 20px; }
+    body header .hamburger {
+      display: none; }
+    body header nav {
+      display: block; }
     body header nav ul {
       list-style: none;
       display: flex; }
@@ -1157,6 +1161,12 @@ footer .redes-sociales a {
       align-items: flex-start; }
       body header .logo img {
         display: none; }
+      body header .hamburger {
+        display: block; }
+      body header nav {
+        display: none; }
+      body header .hamburger.active + nav {
+        display: block; }
       body header nav {
         width: 100%;
         margin: 0;
