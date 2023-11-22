@@ -19,7 +19,8 @@ $button: (
     margin: 0 auto,
     border: none,
     border-radius: 15px,
-    cursor: pointer
+    text-decoration: none
+    
 );
 
 .button-generico {
@@ -32,7 +33,7 @@ $button: (
     margin: map-get($button, margin);
     border: map-get($button, border);
     border-radius: map-get($button, border-radius);
-    cursor: map-get($button, cursor);
+    text-decoration: none;
 }
 
 $button-2: (

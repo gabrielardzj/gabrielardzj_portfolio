@@ -32,6 +32,7 @@ body{
             font-family: 'Urbanist', sans-serif;
         }
         a{
+            text-decoration: none;
             .button {
                 background-color: map-get($button, background-color);
                 font-size: map-get($button, font-size);
@@ -74,7 +75,12 @@ body{
         @include grid-s(3, 300px, 450px, 2, 80px, 200px, 10px, 50px, center, 1px solid #ffffff, 24px);
       
         .item {
-          @include item(1px solid #ffffff, center, center, 24px);
+          @include item(1px solid #181620, center, center, 24px);
+          img {
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+        }
         }
     }
 }

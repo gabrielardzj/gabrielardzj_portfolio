@@ -19,18 +19,13 @@ body{
         text-align: center;
         margin-top: 50px;
         animation: blur-in-expand 0.8s linear both; 
-
-        p{
-
-        }
     }
     .texto-principal-skill-2{
         font-size: 65px;
-        font-weight: bold;
-        margin: 50px 50px 50px 280px;
+        margin: 50px;
         font-family: 'Urbanist', sans-serif;
         color: white;
-
+        text-align: center;
     }
     .grid-skills{
         display: grid;
