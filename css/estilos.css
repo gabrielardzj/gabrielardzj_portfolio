@@ -566,25 +566,31 @@ body {
     /*!-----------------------PRUEBA CON GRIDS 2.0--------------------------------------*/
     /*!---------------------------------------------------------------------------*/
     /*!---------------------------------------------------------------------------*/ }
-    body main .texto-principal p {
+    body main .texto-principal {
       color: #fff;
-      font-size: 85px;
-      font-weight: bold;
+      font-size: 20px;
       margin: 50px;
-      font-family: 'Urbanist', sans-serif;
-      animation: blur-in-expand 0.8s linear both; }
-    body main .texto-principal a {
-      text-decoration: none; }
-      body main .texto-principal a .button {
-        background-color: #701FE1;
-        font-size: 16px;
+      font-weight: bold;
+      font-family: 'Urbanist', sans-serif; }
+      body main .texto-principal p {
+        color: #fff;
+        font-size: 85px;
         font-weight: bold;
-        color: white;
-        padding: 15px 32px;
-        display: block;
-        margin: 0 auto;
-        border: none;
-        border-radius: 15px; }
+        margin: 50px;
+        font-family: 'Urbanist', sans-serif;
+        animation: blur-in-expand 0.8s linear both; }
+      body main .texto-principal a {
+        text-decoration: none; }
+        body main .texto-principal a .button {
+          background-color: #701FE1;
+          font-size: 16px;
+          font-weight: bold;
+          color: white;
+          padding: 15px 32px;
+          display: block;
+          margin: 0 auto;
+          border: none;
+          border-radius: 15px; }
     body main .divider {
       width: 100%;
       height: 0.1px;
@@ -629,26 +635,33 @@ body {
       background-color: #3c3a44;
       margin: 30px 0; }
     body main .hero {
-      display: grid;
-      grid-template-columns: 3fr 2fr; }
-      body main .hero div {
+      align-items: flex-start;
+      display: flex; }
+      body main .hero .info {
         align-self: center; }
-        body main .hero div h2 {
+        body main .hero .info .about {
           color: #fff;
-          font-size: 60px;
-          margin: 50px;
+          font-size: 40px;
           font-weight: bold;
-          font-family: 'Urbanist', sans-serif; }
-        body main .hero div p {
+          font-family: 'Urbanist', sans-serif;
+          display: flex;
+          width: 100%;
+          margin: 1px;
+          justify-content: center; }
+        body main .hero .info .parrafos-genericos {
           font-size: 22px;
           color: #fff;
+          font-family: 'Urbanist', sans-serif;
+          width: 100%;
+          font-weight: normal;
           text-align: justify;
-          line-height: 150%;
-          margin: 50px;
-          font-family: 'Urbanist', sans-serif; }
-        body main .hero div a {
+          margin: 20px 10px 10px 0px;
+          padding: 30px;
+          display: flex;
+          justify-content: center; }
+        body main .hero .info a {
           text-decoration: none; }
-          body main .hero div a .button {
+          body main .hero .info a .button {
             background-color: #701FE1;
             font-size: 16px;
             font-weight: bold;
@@ -1209,26 +1222,33 @@ footer .redes-sociales a {
   body main {
     flex-direction: row;
     align-items: flex-start; }
-    body main .texto-principal p {
-      font-size: 40px;
-      margin: 10px;
-      text-align: center;
-      margin-bottom: 50px; }
-    body main .texto-principal .button-responsive {
-      background-color: #701FE1;
-      font-size: 12px;
-      font-weight: bold;
-      color: white;
-      padding: 10px 27px;
-      display: block;
-      margin: 50px;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer; }
+    body main .texto-principal {
+      margin: 42px; }
+      body main .texto-principal p {
+        font-size: 30px;
+        margin: 10px;
+        text-align: center;
+        margin-bottom: 50px; }
+      body main .texto-principal .button-responsive {
+        background-color: #701FE1;
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
+        padding: 10px 27px;
+        display: block;
+        margin: 50px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer; }
     body main .grid-container {
       grid-template-columns: 200px;
-      margin-top: 100px;
+      margin-top: 50px;
       margin-bottom: 5px; }
+      body main .grid-container div p {
+        margin-top: 8px;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        font-size: 20px; }
     body main .grid-item p:nth-of-type(2) {
       font-size: 10px;
       display: none; } }
@@ -1238,16 +1258,14 @@ footer .redes-sociales a {
   body main .hero {
     flex-direction: row;
     align-items: flex-start; }
-    body main .hero div h2 {
-      font-size: 40px;
-      margin: 40px;
-      width: 120%;
+    body main .hero .info .about {
+      font-size: 30px;
+      width: 100%;
       text-align: center; }
-    body main .hero div p {
-      font-size: 20px;
-      margin: 30px;
-      width: 130%; }
-    body main .hero div a .button-responsive {
+    body main .hero .info .parrafos-genericos {
+      font-size: 16px;
+      width: 100%; }
+    body main .hero .info a .button-responsive {
       background-color: #701FE1;
       font-size: 12px;
       font-weight: bold;
@@ -1257,9 +1275,11 @@ footer .redes-sociales a {
       margin: 50px;
       border: none;
       border-radius: 12px;
-      cursor: pointer; }
-    body main .hero div img {
-      display: none; } }
+      cursor: pointer; } }
+
+@media (max-width: 768px) {
+  body .hero div img {
+    display: none; } }
 
 /*!-----------------------PRUEBA CON GRIDS 2.0--------------------------------------*/
 @media (max-width: 768px) {
@@ -1328,13 +1348,13 @@ footer .redes-sociales a {
 /*!-----------------------INDEX TRABAJAR JUNTOS----------------------------------------------*/
 @media (max-width: 768px) {
   body main .trabajar-juntos h3 {
-    font-size: 50px;
+    font-size: 35px;
     margin: 10px;
     text-align: center;
     margin-bottom: 50px;
     margin-top: 50px; }
   body main .trabajar-juntos p {
-    font-size: 20px;
+    font-size: 16px;
     margin: 30px;
     text-align: justify;
     margin-bottom: 50px; }
@@ -1372,7 +1392,7 @@ footer .redes-sociales a {
 /*!-----------------------MAIN PAGE SKILLS--------------------------------------------------*/
 @media (max-width: 768px) {
   body .texto-principal-skill {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     font-family: 'Urbanist', sans-serif;
     color: white;
@@ -1620,7 +1640,7 @@ footer .redes-sociales a {
     flex-direction: column;
     align-items: flex-start; }
   * .container {
-    width: 322px !important; }
+    width: 250px !important; }
   .row {
     --bs-gutter-x: 4rem;
     --bs-gutter-y: 0;
@@ -1635,7 +1655,7 @@ footer .redes-sociales a {
       order: 2; }
   h2 {
     color: white;
-    font-size: 60px;
+    font-size: 40px;
     margin: 12px;
     font-weight: bold;
     font-family: 'Urbanist', sans-serif;

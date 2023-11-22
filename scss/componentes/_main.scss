@@ -20,6 +20,11 @@ body{
     /*!-----------------------INDEX HABILIDADES PERSONALES--------------------------------------*/
 
         .texto-principal{
+            color: $color-secundario;
+            font-size: 20px;
+            margin: 50px;
+            font-weight: bold;
+            font-family: 'Urbanist', sans-serif;
             p{
                 color:$color-secundario;
                 font-size: 85px;
@@ -101,25 +106,32 @@ body{
         /*!-----------------------PRUEBA CON GRIDS--------------------------------------*/
 
         .hero{
-            display: grid;
-            grid-template-columns: 3fr 2fr;
-            div{
+            align-items: flex-start;
+            display: flex;
+            .info{
                 align-self: center;
-                h2{
+                .about{
                     color: $color-secundario;
-                    font-size: 60px;
-                    margin: 50px;
+                    font-size: 40px;
                     font-weight: bold;
                     font-family: 'Urbanist', sans-serif;
+                    display: flex;
+                    width: 100%;
+                    margin: 1px;
+                    justify-content: center
 
                 }
-                p{
+                .parrafos-genericos{
                     font-size: 22px; 
                     color: $color-secundario;
-                    text-align: justify;
-                    line-height: 150%;
-                    margin: 50px;
                     font-family: 'Urbanist', sans-serif;
+                    width: 100%;
+                    font-weight: normal;
+                    text-align: justify;
+                    margin: 20px 10px 10px 0px;
+                    padding: 30px;
+                    display: flex;
+                    justify-content: center;
 
                 }
                 a{
