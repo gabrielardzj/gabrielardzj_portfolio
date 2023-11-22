@@ -179,6 +179,66 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
+.icon-1::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-2::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-3::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-4::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-5::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-6::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
 body {
   background-color: #181620;
   font-family: 'Urbanist', sans-serif; }
@@ -216,8 +276,12 @@ body {
     font-size: 22px; }
     body header h1 {
       color: white; }
-    body header div img {
-      height: 50px; }
+    body header div {
+      display: flex;
+      align-items: center; }
+      body header div img {
+        height: 100px;
+        margin-left: 20px; }
     body header nav ul {
       list-style: none;
       display: flex; }
@@ -417,6 +481,66 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
+
+.icon-1::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-2::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-3::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-4::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-5::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
+
+.icon-6::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-size: 45px;
+  background-image: #701FE1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 65px; }
 
 @keyframes blur-in-expand {
   0% {
@@ -930,7 +1054,7 @@ body .texto-principal-skill-2 {
 body .grid-skills {
   display: grid;
   grid-template-columns: repeat(3, minmax(150px, 250px));
-  grid-template-rows: repeat(2, minmax(150px, 250px));
+  grid-template-rows: repeat(2, minmax(150px, 200px));
   gap: 80px;
   margin: 50px;
   justify-content: center; }
@@ -947,69 +1071,61 @@ body .grid-skills {
     body .grid-skills .item-skill .icon-1::before {
       content: "";
       font-family: "Font Awesome 6 Free";
-      position: absolute;
-      top: 20;
-      left: 30;
       font-size: 45px;
-      background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+      background-image: #701FE1;
       background-clip: text;
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 65px; }
     body .grid-skills .item-skill .icon-2::before {
       content: "";
       font-family: "Font Awesome 6 Free";
-      position: absolute;
-      top: 20;
-      left: 30;
       font-size: 45px;
-      background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+      background-image: #701FE1;
       background-clip: text;
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 65px; }
     body .grid-skills .item-skill .icon-3::before {
       content: "";
       font-family: "Font Awesome 6 Free";
-      position: absolute;
-      top: 20;
-      left: 30;
       font-size: 45px;
-      background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+      background-image: #701FE1;
       background-clip: text;
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 65px; }
     body .grid-skills .item-skill .icon-4::before {
       content: "";
       font-family: "Font Awesome 6 Free";
-      position: absolute;
-      top: 20;
-      left: 30;
       font-size: 45px;
-      background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+      background-image: #701FE1;
       background-clip: text;
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 65px; }
     body .grid-skills .item-skill .icon-5::before {
       content: "";
       font-family: "Font Awesome 6 Free";
-      position: absolute;
-      top: 20;
-      left: 30;
       font-size: 45px;
-      background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+      background-image: #701FE1;
       background-clip: text;
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 65px; }
     body .grid-skills .item-skill .icon-6::before {
       content: "";
       font-family: "Font Awesome 6 Free";
-      position: absolute;
-      top: 20;
-      left: 30;
       font-size: 45px;
-      background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+      background-image: #701FE1;
       background-clip: text;
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 65px; }
+
+p {
+  margin-top: 40px;
+  margin-bottom: 0; }
 
 footer .redes-sociales ul {
   list-style-type: none;

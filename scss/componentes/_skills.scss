@@ -30,7 +30,7 @@ body{
     .grid-skills{
         display: grid;
         grid-template-columns: repeat(3, minmax(150px, 250px));
-        grid-template-rows: repeat(2, minmax(150px, 250px));
+        grid-template-rows: repeat(2, minmax(150px, 200px));
         gap: 80px;
         margin: 50px;
         justify-content: center;
@@ -46,29 +46,33 @@ body{
             position: relative; 
             
             .icon-1::before {
-                @include awesome-icon("\f121", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+                @include awesome-icon-2("\f121", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
             }
             
             .icon-2::before{
-                @include awesome-icon("\f5fc", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+                @include awesome-icon-2("\f5fc", "Font Awesome 6 Free",  45px, $primary-bg-start, text, text, transparent,65px);
             }
             
             .icon-3::before{
-                @include awesome-icon("\f1c9", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+                @include awesome-icon-2("\f1c9", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
             }
             
             .icon-4::before{
-                @include awesome-icon("\f245", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+                @include awesome-icon-2("\f245", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
             }
             
             .icon-5::before{
-                @include awesome-icon("\f5ad", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+                @include awesome-icon-2("\f5ad", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
             }
             
             .icon-6::before{
-                @include awesome-icon("\f390", "Font Awesome 6 Free", absolute, 20, 30, 45px, linear-gradient(to bottom, #701FE1, #5E35DF), text, transparent);
+                @include awesome-icon-2("\f390", "Font Awesome 6 Free", 45px, $primary-bg-start, text, text, transparent,65px);
             }
 
         }
     }
+}
+p {
+    margin-top: 40px;
+    margin-bottom: 0;
 }
