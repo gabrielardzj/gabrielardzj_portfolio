@@ -1154,39 +1154,49 @@ footer .redes-sociales a {
 @media (max-width: 768px) {
   body {
     background-color: #181620;
-    overflow-x: hidden;
-    align-self: center; }
-    body header {
-      flex-direction: column;
-      align-items: flex-start; }
-      body header .logo img {
+    overflow-x: hidden; }
+    body .header {
+      display: flex;
+      flex-direction: row; }
+      body .header .logo img {
+        width: 100px;
+        height: auto;
+        margin-left: 4px; }
+      body .header .hamburger {
+        display: block;
+        background-color: transparent;
+        align-self: center;
+        position: fixed;
+        top: 45px;
+        right: 20px; }
+        body .header .hamburger .hamburger-box {
+          background-color: transparent; }
+        body .header .hamburger .hamburger-style {
+          width: 30px;
+          height: 30px; }
+      body .header nav {
         display: none; }
-      body header .hamburger {
+      body .header .hamburger.active + nav {
         display: block; }
-      body header nav {
-        display: none; }
-      body header .hamburger.active + nav {
-        display: block; }
-      body header nav {
+      body .header nav {
         width: 100%;
         margin: 0;
         padding: 0;
         margin-top: 10px; }
-        body header nav ul {
-          width: 100%;
+        body .header nav ul {
           box-sizing: border-box;
           margin: 0;
-          padding: 0;
           display: grid;
-          grid-template-columns: repeat(5, 1fr);
-          justify-items: center;
-          align-items: center; }
-          body header nav ul li {
+          margin-left: 51px;
+          margin-top: 52px;
+          border-radius: 10px;
+          background-color: #701FE1; }
+          body .header nav ul li {
             margin-right: 0;
             margin-bottom: 10px; }
-            body header nav ul li a {
+            body .header nav ul li a {
               font-size: 10px; }
-            body header nav ul li a:hover {
+            body .header nav ul li a:hover {
               background-color: #fff;
               border-radius: 30px;
               color: white;

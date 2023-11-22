@@ -3,17 +3,29 @@
     body {
         background-color: #181620; 
         overflow-x: hidden;
-        align-self: center;
-        
-        header {
-            flex-direction: column;
-            align-items: flex-start;
+        .header {
+            display: flex;
+            flex-direction: row;
             
             .logo img {
-                display: none;
+                width: 100px; 
+                height: auto; 
+                margin-left: 4px;
             }
             .hamburger {
                 display: block; 
+                background-color: transparent;
+                align-self: center; 
+                position: fixed;
+                top: 45px; 
+                right: 20px;
+                .hamburger-box {
+                    background-color: transparent;
+                }
+                .hamburger-style {
+                    width: 30px; 
+                    height: 30px; 
+                }
             }
         
             nav {
@@ -29,14 +41,13 @@
                 padding: 0;
                 margin-top: 10px;  
                 ul {
-                    width: 100%;
                     box-sizing: border-box;
-                    margin: 0; 
-                    padding: 0; 
-                    display: grid; 
-                    grid-template-columns: repeat(5, 1fr);
-                    justify-items: center;
-                    align-items: center; 
+                    margin: 0;
+                    display: grid;
+                    margin-left: 51px;
+                    margin-top: 52px;
+                    border-radius: 10px;
+                    background-color: $primary-bg-start;
     
                     li {
                         margin-right: 0;
