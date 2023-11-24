@@ -557,15 +557,15 @@ body {
     opacity: 1; } }
 
 body {
-  background-color: #181620; }
+  background-color: #181620;
+  /*!-----------------------PRUEBA CON GRIDS--------------------------------------*/
+  /*!-----------------------PRUEBA CON GRIDS 2.0--------------------------------------*/
+  /*!---------------------------------------------------------------------------*/
+  /*!---------------------------------------------------------------------------*/ }
   body main {
     max-width: 1200px;
     margin: 0 auto;
-    /*!-----------------------INDEX HABILIDADES PERSONALES--------------------------------------*/
-    /*!-----------------------PRUEBA CON GRIDS--------------------------------------*/
-    /*!-----------------------PRUEBA CON GRIDS 2.0--------------------------------------*/
-    /*!---------------------------------------------------------------------------*/
-    /*!---------------------------------------------------------------------------*/ }
+    /*!-----------------------INDEX HABILIDADES PERSONALES--------------------------------------*/ }
     body main .texto-principal {
       color: #fff;
       font-size: 20px;
@@ -591,117 +591,77 @@ body {
           margin: 0 auto;
           border: none;
           border-radius: 15px; }
-    body main .divider {
-      width: 100%;
-      height: 0.1px;
-      background-color: #3c3a44;
-      margin: 30px 0; }
-    body main .grid-container {
-      display: grid;
-      grid-template-columns: 300px 300px 300px 300px;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 60px;
-      margin-bottom: 60px;
-      color: #fff; }
-      body main .grid-container div {
-        position: relative;
+  body .divider {
+    width: 100%;
+    height: 0.1px;
+    background-color: #3c3a44;
+    margin: 30px 0; }
+  body .grid-container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: #fff; }
+    body .grid-container div {
+      position: relative;
+      text-align: center;
+      padding-top: 50px; }
+      body .grid-container div i {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 30px;
+        margin-bottom: 10px;
+        background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      body .grid-container div p {
+        margin-top: 20px;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        font-size: 25px; }
+      body .grid-container div p:nth-of-type(2) {
+        font-size: 12px;
         text-align: center;
-        padding-top: 50px; }
-        body main .grid-container div i {
-          position: absolute;
-          top: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          font-size: 30px;
-          margin-bottom: 10px;
-          background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent; }
-        body main .grid-container div p {
-          margin-top: 20px;
-          font-family: 'Urbanist', sans-serif;
-          font-weight: bold;
-          font-size: 25px; }
-        body main .grid-container div p:nth-of-type(2) {
-          font-size: 12px;
-          text-align: center;
-          font-family: 'Urbanist', sans-serif;
-          font-weight: lighter; }
-    body main .divider {
-      width: 100%;
-      height: 0.1px;
-      background-color: #3c3a44;
-      margin: 30px 0; }
-    body main .hero {
-      align-items: flex-start;
-      display: flex; }
-      body main .hero .info {
-        align-self: center; }
-        body main .hero .info .about {
-          color: #fff;
-          font-size: 40px;
-          font-weight: bold;
-          font-family: 'Urbanist', sans-serif;
-          display: flex;
-          width: 100%;
-          margin: 1px;
-          justify-content: center; }
-        body main .hero .info .parrafos-genericos {
-          font-size: 22px;
-          color: #fff;
-          font-family: 'Urbanist', sans-serif;
-          width: 100%;
-          font-weight: normal;
-          text-align: justify;
-          margin: 20px 10px 10px 0px;
-          padding: 30px;
-          display: flex;
-          justify-content: center; }
-        body main .hero .info a {
-          text-decoration: none; }
-          body main .hero .info a .button {
-            background-color: #701FE1;
-            font-size: 16px;
-            font-weight: bold;
-            color: white;
-            padding: 15px 32px;
-            display: block;
-            margin: 0 auto;
-            border: none;
-            border-radius: 15px; }
-      body main .hero div img {
-        width: 300px;
-        height: 300px;
-        border-radius: 50%; }
-    body main .divider {
-      width: 100%;
-      height: 0.1px;
-      background-color: #3c3a44;
-      margin: 30px 0; }
-    body main .skills {
-      text-align: center; }
-      body main .skills h2 {
+        font-family: 'Urbanist', sans-serif;
+        font-weight: lighter; }
+  body .divider {
+    width: 100%;
+    height: 0.1px;
+    background-color: #3c3a44;
+    margin: 30px 0; }
+  body .hero {
+    align-items: flex-start;
+    display: flex; }
+    body .hero .info {
+      align-self: center; }
+      body .hero .info .about {
         color: #fff;
-        font-size: 45px;
-        text-align: center;
-        margin-bottom: 20px; }
-      body main .skills div {
-        display: inline-block;
-        text-align: center;
-        margin: 30px; }
-        body main .skills div img {
-          width: 180px;
-          height: auto; }
-        body main .skills div p {
-          font-size: 16px;
-          color: #fff;
-          margin-top: 5px;
-          font-family: 'Urbanist', sans-serif; }
-      body main .skills a {
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Urbanist', sans-serif;
+        display: flex;
+        width: 100%;
+        margin: 1px;
+        justify-content: center; }
+      body .hero .info .parrafos-genericos {
+        font-size: 22px;
+        color: #fff;
+        font-family: 'Urbanist', sans-serif;
+        width: 100%;
+        font-weight: normal;
+        text-align: justify;
+        margin: 20px 10px 10px 0px;
+        padding: 30px;
+        display: flex;
+        justify-content: center; }
+      body .hero .info a {
         text-decoration: none; }
-        body main .skills a .button {
+        body .hero .info a .button {
           background-color: #701FE1;
           font-size: 16px;
           font-weight: bold;
@@ -711,41 +671,37 @@ body {
           margin: 0 auto;
           border: none;
           border-radius: 15px; }
-      body main .skills div img {
-        width: 200px;
-        height: 200px; }
-    body main .divider {
-      width: 100%;
-      height: 0.1px;
-      background-color: #3c3a44;
-      margin: 30px 0; }
-    body main .services h2 {
+    body .hero div img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%; }
+  body .divider {
+    width: 100%;
+    height: 0.1px;
+    background-color: #3c3a44;
+    margin: 30px 0; }
+  body .skills {
+    text-align: center; }
+    body .skills h2 {
       color: #fff;
       font-size: 45px;
-      text-align: center; }
-    body main .services .services-grid {
-      display: grid;
-      grid-template-columns: 250px 250px 250px;
-      grid-template-rows: 100px 100px;
-      grid-template-areas: "one two two" "three three four" "five six seven";
-      place-content: center;
-      grid-gap: 100px;
-      margin-left: 125px; }
-      body main .services .services-grid div i {
-        font-size: 60px;
-        background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 30px; }
-      body main .services .services-grid div p {
-        margin-top: 10px;
+      text-align: center;
+      margin-bottom: 20px; }
+    body .skills div {
+      display: inline-block;
+      text-align: center;
+      margin: 30px; }
+      body .skills div img {
+        width: 180px;
+        height: auto; }
+      body .skills div p {
+        font-size: 16px;
         color: #fff;
-        font-size: 20px;
+        margin-top: 5px;
         font-family: 'Urbanist', sans-serif; }
-    body main .services a {
+    body .skills a {
       text-decoration: none; }
-      body main .services a .button {
+      body .skills a .button {
         background-color: #701FE1;
         font-size: 16px;
         font-weight: bold;
@@ -755,35 +711,79 @@ body {
         margin: 0 auto;
         border: none;
         border-radius: 15px; }
-    body main .divider {
-      width: 100%;
-      height: 0.1px;
-      background-color: #3c3a44;
-      margin: 30px 0; }
-    body main .trabajar-juntos h3 {
+    body .skills div img {
+      width: 200px;
+      height: 200px; }
+  body .divider {
+    width: 100%;
+    height: 0.1px;
+    background-color: #3c3a44;
+    margin: 30px 0; }
+  body .services h2 {
+    color: #fff;
+    font-size: 45px;
+    text-align: center; }
+  body .services .services-grid {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 100px 100px;
+    grid-template-areas: "one two two" "three three four" "five six seven";
+    place-content: center;
+    grid-gap: 100px;
+    margin-left: 125px; }
+    body .services .services-grid div i {
+      font-size: 60px;
+      background-image: linear-gradient(to bottom, #701FE1, #5E35DF);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 30px; }
+    body .services .services-grid div p {
+      margin-top: 10px;
       color: #fff;
-      font-size: 60px; }
-    body main .trabajar-juntos p {
-      font-size: 22px;
-      color: #fff;
-      text-align: left; }
-    body main .trabajar-juntos a {
-      text-decoration: none; }
-      body main .trabajar-juntos a .button {
-        background-color: #701FE1;
-        font-size: 16px;
-        font-weight: bold;
-        color: white;
-        padding: 15px 32px;
-        display: block;
-        margin: 0 auto;
-        border: none;
-        border-radius: 15px; }
-    body main .divider {
-      width: 100%;
-      height: 0.1px;
-      background-color: #3c3a44;
-      margin: 30px 0; }
+      font-size: 20px;
+      font-family: 'Urbanist', sans-serif; }
+  body .services a {
+    text-decoration: none; }
+    body .services a .button {
+      background-color: #701FE1;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      padding: 15px 32px;
+      display: block;
+      margin: 0 auto;
+      border: none;
+      border-radius: 15px; }
+  body .divider {
+    width: 100%;
+    height: 0.1px;
+    background-color: #3c3a44;
+    margin: 30px 0; }
+  body .trabajar-juntos h3 {
+    color: #fff;
+    font-size: 60px; }
+  body .trabajar-juntos p {
+    font-size: 22px;
+    color: #fff;
+    text-align: left; }
+  body .trabajar-juntos a {
+    text-decoration: none; }
+    body .trabajar-juntos a .button {
+      background-color: #701FE1;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      padding: 15px 32px;
+      display: block;
+      margin: 0 auto;
+      border: none;
+      border-radius: 15px; }
+  body .divider {
+    width: 100%;
+    height: 0.1px;
+    background-color: #3c3a44;
+    margin: 30px 0; }
 
 @keyframes blur-in-expand {
   0% {

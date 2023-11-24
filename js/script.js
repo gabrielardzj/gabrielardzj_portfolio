@@ -8,7 +8,7 @@ document.getElementById('logo-button').addEventListener('click', function() {
 });
 
 document.getElementById('logo-button-2').addEventListener('click', function() {
-  window.location.href = '../../index.html';
+  window.location.href = '/index.html';
 });
 
 /*!------------const hamburger = document.querySelector(".hamburger");

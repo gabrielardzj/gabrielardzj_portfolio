@@ -12,6 +12,7 @@
     }
 }
 
+
 body{
     background-color: $color-primario;
     main{
@@ -47,6 +48,8 @@ body{
                     border: map-get($button, border);
                     border-radius: map-get($button, border-radius);
                     cursor: map-get($button, cursor);
+                
+                }
                 }
             }
         }
@@ -317,5 +320,5 @@ body{
             }
 
     }
-}
+
 
