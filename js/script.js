@@ -3,12 +3,31 @@ document.querySelector('.hamburger').addEventListener('click', function() {
   document.querySelector('nav').classList.toggle('active');
 });
 
-document.getElementById('logo-button').addEventListener('click', function() {
-  window.location.href = 'index.html';
+// document.getElementById('logo-button').addEventListener('click', function() {
+//   window.location.href = 'index.html';
+// });
+
+// document.getElementById('logo-button-2').addEventListener('click', function() {
+//   window.location.href = '/';
+// });
+
+document.addEventListener('DOMContentLoaded', function() {
+  var logoButton = document.getElementById('logo-button');
+  if (logoButton) { 
+      logoButton.addEventListener('click', function() {
+          window.location.href = 'index.html';
+      });
+  }
 });
 
-document.getElementById('logo-button-2').addEventListener('click', function() {
-  window.location.href = '/index.html';
+document.addEventListener('DOMContentLoaded', function() {
+  var logoButton = document.getElementById('logo-button-2');
+  if (logoButton) { 
+      logoButton.addEventListener('click', function() {
+          console.log('logo-button-2 clicked'); 
+          window.location.href = '../index.html';
+      });
+  }
 });
 
 /*!------------const hamburger = document.querySelector(".hamburger");
