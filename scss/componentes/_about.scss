@@ -3,7 +3,8 @@
     grid-template-columns: 3fr 1fr;
     padding: 30px;
     margin-top: 50px;
-    div{
+    margin-left: 150px;
+    .info{
         .parrafos-genericos{
             font-size: 22px; 
             color: $color-secundario;
@@ -19,14 +20,15 @@
             margin: 10px 10px 10px 50px;;
             font-weight: bold;
             font-family: 'Urbanist', sans-serif;
+            text-align: center;
         }
         .parrafos-genericos-2{
             font-size: 22px; 
             color: $color-secundario;
-            text-align: justify;
+            text-align: center;
             line-height: 150%;
-            margin: -18px 10px 68px 50px;
             font-family: 'Urbanist', sans-serif;
+            margin: 30px;
 
         }
         a{
@@ -54,7 +56,7 @@
     .image-logo{
         padding: 10px;
         margin: 10px;
-        margin-right: 150px;
+        margin-left: 170px;
         img{
             width: 450px; 
             height: 450px; 

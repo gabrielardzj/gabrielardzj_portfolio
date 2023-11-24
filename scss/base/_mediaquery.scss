@@ -497,18 +497,10 @@
     .hero{
         display: grid;
         grid-template-columns: 1fr;
-        margin-top: 5px;
-        padding: 10px;
+        padding: 0px;
+        margin-left: 0;
+        margin-top: -50px;
         .info{
-            .parrafos-genericos{
-                font-size: 16px; 
-                color: $color-secundario;
-                text-align: center;
-                margin: 10px;
-                display: flex;
-                justify-content: center;
-                
-            }
             .about{
                 color: $color-secundario;
                 font-size: 40px;
@@ -520,14 +512,15 @@
                 justify-content: center;
 
             }
-            .parrafos-genericos-2{
-                font-size: 22px; 
+            .parrafos-genericos{
+                font-size: 16px; 
                 color: $color-secundario;
                 text-align: center;
-                font-family: 'Urbanist', sans-serif;
-                margin: 10px;
+                margin: 0px;
                 display: flex;
                 justify-content: center;
+                margin: 1px 1px 1px 1px;
+                
             }
             a{
                 font-size: 16px; 
@@ -547,6 +540,7 @@
             }
        }
        .image-logo{
+        display: none;
         margin: 1px 1px 1px 39px;
         img{
             width: 200px; 

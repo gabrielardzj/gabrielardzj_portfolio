@@ -265,6 +265,74 @@ h2 {
   margin: 50px;
   font-family: 'Urbanist', sans-serif; }
 
+/* Animaciones */
+/* Bounce Out */
+/* Bounce In */
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+
+/* Pulse */
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); } }
+
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); } }
+
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+/* Shrink */
+.hvr-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9); }
+
 body {
   background-color: #181620; }
   body header {
@@ -574,7 +642,7 @@ body {
       font-family: 'Urbanist', sans-serif; }
       body main .texto-principal p {
         color: #fff;
-        font-size: 85px;
+        font-size: 70px;
         font-weight: bold;
         margin: 50px;
         font-family: 'Urbanist', sans-serif;
@@ -636,7 +704,10 @@ body {
     margin: 30px 0; }
   body .hero {
     align-items: flex-start;
-    display: flex; }
+    display: flex;
+    padding: 30px;
+    margin-top: 0;
+    margin-left: 0; }
     body .hero .info {
       align-self: center; }
       body .hero .info .about {
@@ -654,7 +725,7 @@ body {
         font-family: 'Urbanist', sans-serif;
         width: 100%;
         font-weight: normal;
-        text-align: justify;
+        text-align: center;
         margin: 20px 10px 10px 0px;
         padding: 30px;
         display: flex;
@@ -861,8 +932,9 @@ body {
   display: grid;
   grid-template-columns: 3fr 1fr;
   padding: 30px;
-  margin-top: 50px; }
-  .hero div .parrafos-genericos {
+  margin-top: 50px;
+  margin-left: 150px; }
+  .hero .info .parrafos-genericos {
     font-size: 22px;
     color: #fff;
     text-align: justify;
@@ -870,20 +942,21 @@ body {
     margin: 10px 22px -22px 50px;
     font-family: 'Urbanist', sans-serif;
     font-weight: bold; }
-  .hero div .about {
+  .hero .info .about {
     color: #fff;
     font-size: 60px;
     margin: 10px 10px 10px 50px;
     font-weight: bold;
-    font-family: 'Urbanist', sans-serif; }
-  .hero div .parrafos-genericos-2 {
+    font-family: 'Urbanist', sans-serif;
+    text-align: center; }
+  .hero .info .parrafos-genericos-2 {
     font-size: 22px;
     color: #fff;
-    text-align: justify;
+    text-align: center;
     line-height: 150%;
-    margin: -18px 10px 68px 50px;
-    font-family: 'Urbanist', sans-serif; }
-  .hero div a {
+    font-family: 'Urbanist', sans-serif;
+    margin: 30px; }
+  .hero .info a {
     font-size: 22px;
     color: #701FE1;
     text-align: justify;
@@ -891,11 +964,11 @@ body {
     margin: 30px;
     font-family: 'Urbanist', sans-serif;
     margin-left: 50px; }
-  .hero div .botones {
+  .hero .info .botones {
     display: flex;
     margin-left: 0px;
     margin-top: -5px; }
-    .hero div .botones .about-btn {
+    .hero .info .botones .about-btn {
       width: 30px;
       height: 30px;
       margin-right: 10px;
@@ -903,7 +976,7 @@ body {
   .hero .image-logo {
     padding: 10px;
     margin: 10px;
-    margin-right: 150px; }
+    margin-left: 170px; }
     .hero .image-logo img {
       width: 450px;
       height: 450px; }
@@ -973,7 +1046,7 @@ body section .titulo-services {
   text-align: center;
   font-weight: bold;
   color: white;
-  font-size: 80px;
+  font-size: 70px;
   margin: 50px;
   font-family: 'Urbanist', sans-serif;
   animation: blur-in-expand 0.8s linear both; }
@@ -1053,7 +1126,7 @@ body .grid-services {
     opacity: 1; } }
 
 body .texto-principal-skill {
-  font-size: 85px;
+  font-size: 70px;
   font-weight: bold;
   font-family: 'Urbanist', sans-serif;
   color: white;
@@ -1062,7 +1135,7 @@ body .texto-principal-skill {
   animation: blur-in-expand 0.8s linear both; }
 
 body .texto-principal-skill-2 {
-  font-size: 65px;
+  font-size: 60px;
   margin: 50px;
   font-family: 'Urbanist', sans-serif;
   color: white;
@@ -1561,15 +1634,9 @@ footer .redes-sociales a {
   .hero {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 5px;
-    padding: 10px; }
-    .hero .info .parrafos-genericos {
-      font-size: 16px;
-      color: #fff;
-      text-align: center;
-      margin: 10px;
-      display: flex;
-      justify-content: center; }
+    padding: 0px;
+    margin-left: 0;
+    margin-top: -50px; }
     .hero .info .about {
       color: #fff;
       font-size: 40px;
@@ -1579,14 +1646,14 @@ footer .redes-sociales a {
       margin: 10px;
       display: flex;
       justify-content: center; }
-    .hero .info .parrafos-genericos-2 {
-      font-size: 22px;
+    .hero .info .parrafos-genericos {
+      font-size: 16px;
       color: #fff;
       text-align: center;
-      font-family: 'Urbanist', sans-serif;
-      margin: 10px;
+      margin: 0px;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      margin: 1px 1px 1px 1px; }
     .hero .info a {
       font-size: 16px;
       color: #701FE1;
@@ -1600,6 +1667,7 @@ footer .redes-sociales a {
         width: 100px;
         height: 100px; }
     .hero .image-logo {
+      display: none;
       margin: 1px 1px 1px 39px; }
       .hero .image-logo img {
         width: 200px;
