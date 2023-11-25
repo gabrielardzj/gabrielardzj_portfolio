@@ -10,22 +10,22 @@
             color: $color-secundario;
             text-align: justify;
             line-height: 150%;
-            margin: 10px 22px -22px 50px;
+            margin: 30px;
             font-family: 'Urbanist', sans-serif;
             font-weight: bold;
         }
         .about{
             color: $color-secundario;
             font-size: 60px;
-            margin: 10px 10px 10px 50px;;
+            margin: 30px;
             font-weight: bold;
             font-family: 'Urbanist', sans-serif;
-            text-align: center;
+            text-align: justify;
         }
         .parrafos-genericos-2{
             font-size: 22px; 
             color: $color-secundario;
-            text-align: center;
+            text-align: justify;
             line-height: 150%;
             font-family: 'Urbanist', sans-serif;
             margin: 30px;
@@ -38,7 +38,6 @@
             line-height: 150%;
             margin: 30px;
             font-family: 'Urbanist', sans-serif;
-            margin-left: 50px;
 
         }
         .botones {
@@ -48,15 +47,14 @@
             .about-btn {
                 width: 30px; 
                 height: 30px; 
-                margin-right: 10px; 
                 text-align: center; 
             }
         }
     }
     .image-logo{
         padding: 10px;
-        margin: 10px;
-        margin-left: 170px;
+        margin-bottom: 50px;
+        margin-right: 50px;
         img{
             width: 450px; 
             height: 450px; 

@@ -126,7 +126,7 @@
 @media (max-width: 768px) {
     body {
         main{
-            .hero{
+            .hero-index{
                 flex-direction: row;
                 align-items: flex-start;
                 .info{
@@ -163,7 +163,7 @@
 }
 @media (max-width: 768px) {
     body{
-        .hero{
+        .hero-index{
             div{
                 img{
                     display: none;
@@ -497,10 +497,20 @@
     .hero{
         display: grid;
         grid-template-columns: 1fr;
-        padding: 0px;
+        padding: 0;
         margin-left: 0;
-        margin-top: -50px;
+        margin-top: 20px;
         .info{
+            .parrafos-genericos{
+                font-size: 16px; 
+                color: $color-secundario;
+                text-align: center;
+                margin: 0px;
+                display: flex;
+                justify-content: center;
+                margin: 1px 1px 1px 1px;
+                
+            }
             .about{
                 color: $color-secundario;
                 font-size: 40px;
@@ -512,15 +522,13 @@
                 justify-content: center;
 
             }
-            .parrafos-genericos{
-                font-size: 16px; 
-                color: $color-secundario;
-                text-align: center;
-                margin: 0px;
-                display: flex;
-                justify-content: center;
-                margin: 1px 1px 1px 1px;
-                
+            .parrafos-genericos-2{
+                margin: 10px 10px 10px 150px;
+                font-size: 22px;
+                color: #fff;
+                text-align: justify;
+                line-height: 150%;
+                font-family: 'Urbanist', sans-serif;
             }
             a{
                 font-size: 16px; 
@@ -573,6 +581,7 @@
                 }
             }
             .image-personal{
+                display: none;
                 margin: 1px 1px 1px 1px;
                 img{
                     width: 200px; 
